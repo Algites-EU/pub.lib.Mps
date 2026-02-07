@@ -1,6 +1,6 @@
-# <Project Name>
+# pub.lib.Mps
 
-Short description of the project.
+Commonly used MPS libraries/artifacts
 
 > Public Algites project.
 
@@ -8,25 +8,24 @@ Short description of the project.
 
 ## 📦 Overview
 
-Describe:
-- what this project is,
-- what problem it solves,
-- who it is for.
+This repository contains the definition of the Meta Programming System libraries, used generally in all Algites projects as a part 
+of the Algites MPS development ecosystem.
 
-Example:
-This repository contains the implementation of **<Project Name>**, a <library/tool/framework/platform/app>
-that is part of the Algites ecosystem.
+Currently used MPS version for the sources stored here expected is: 2025.1.2
 
 ---
 
 ## 🧱 Modules & Structure
+
+In this project are contained following MPS libraries:
+- common.base
 
 Briefly describe the structure, for example:
 
 ```
 .
 ├── README.md
-└──(module/root/path - custom, sometimes even empty)
+└──common.base .... base library definitions
           ├── README.md
           └── (module-name)
                     ├── run/
