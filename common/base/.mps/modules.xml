@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/mpslang.eu.algites.lib.common.base.type/mpslang.eu.algites.lib.common.base.type.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/mpslang.eu.algites.lib.common.base/mpslang.eu.algites.lib.common.base.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/mpslang.eu.algites.lib.common.datatype.i18n/mpslang.eu.algites.lib.common.datatype.i18n.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/mpslang.eu.algites.lib.common.util.collections.map/mpslang.eu.algites.lib.common.util.collections.map.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/mpslang.eu.algites.lib.common.util.collections/mpslang.eu.algites.lib.common.util.collections.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/mpslang.eu.algites.lib.common.util/mpslang.eu.algites.lib.common.util.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/mpslang.test1/mpslang.test1.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/mpslang.test2/mpslang.test2.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/mpssol.eu.algites.lib.common.base.type/mpssol.eu.algites.lib.common.base.type.msd" folder="" />
+    </projectModules>
+  </component>
+</project>

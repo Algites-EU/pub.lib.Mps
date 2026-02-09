@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="index.html">
+      <unit at="1,0,50,7" name="mpslang.eu.algites.lib.common.datatype.i18n.structure.index" />
+    </file>
+    <file name="index_structure.html">
+      <unit at="1,0,105,7" name="mpslang.eu.algites.lib.common.datatype.i18n.structure.index_structure" />
+    </file>
+  </root>
+  <root nodeRef="r:936c57c6-2ecf-461a-93df-f432e7590aca(mpslang.eu.algites.lib.common.datatype.i18n.structure)/7375839405632632118">
+    <file name="7375839405632632118_AConcept.html">
+      <unit id="7375839405632632118" at="1,0,132,7" name="mpslang.eu.algites.lib.common.datatype.i18n.structure.7375839405632632118_AConcept" />
+    </file>
+  </root>
+  <root nodeRef="r:936c57c6-2ecf-461a-93df-f432e7590aca(mpslang.eu.algites.lib.common.datatype.i18n.structure)/7375839405632633274">
+    <file name="7375839405632633274_AConcept.html">
+      <unit id="7375839405632633274" at="1,0,100,7" name="mpslang.eu.algites.lib.common.datatype.i18n.structure.7375839405632633274_AConcept" />
+    </file>
+  </root>
+  <root nodeRef="r:936c57c6-2ecf-461a-93df-f432e7590aca(mpslang.eu.algites.lib.common.datatype.i18n.structure)/7375839405632635696">
+    <file name="7375839405632635696_AConcept.html">
+      <unit id="7375839405632635696" at="1,0,108,7" name="mpslang.eu.algites.lib.common.datatype.i18n.structure.7375839405632635696_AConcept" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root nodeRef="r:fab6f20e-13d9-4b53-be72-e67b7770908c(mpslang.test1.code)/6037028837746606903">
+    <file name="AInMyEnum.java">
+      <unit id="6037028837746606903" at="6,0,10,0" name="mpslang.test1.code.AInMyEnum" />
+    </file>
+  </root>
+</debug-info>
+
