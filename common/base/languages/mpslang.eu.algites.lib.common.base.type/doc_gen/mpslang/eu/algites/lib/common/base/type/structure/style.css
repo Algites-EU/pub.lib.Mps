@@ -1,0 +1,243 @@
+body {
+  background-color : #ffffff;
+  color : #353833;
+  font-family : 'DejaVu Sans', Arial, Helvetica, sans-serif;
+  font-size : 14px;
+  margin : 0;
+}
+pre {
+  font-family : 'DejaVu Sans Mono', monospace;
+  font-size : 14px;
+}
+div.doc pre.codeblock {
+  margin-left : 50px;
+  margin-top : 20px;
+  margin-bottom : 20px;
+  color : #5A5A5A;
+  font-family : "Courier New",Monaco,Courier,monospace;
+}
+div.doc code.nodeRef {
+  font-style : bold;
+}
+h1 {
+  font-size : 20px;
+}
+h2 {
+  font-size : 18px;
+}
+h3 {
+  font-size : 16px;
+}
+h4 {
+  font-size : 13px;
+}
+h5 {
+  font-size : 12px;
+}
+h6 {
+  font-size : 11px;
+}
+ul {
+  list-style-type : disc;
+}
+code {
+  font-family : 'DejaVu Sans Mono', monospace;
+  font-size : 14px;
+  padding-top : 4px;
+  margin-top : 8px;
+  line-height : 1.4em;
+}
+ul.blockList, li.blockList {
+  margin : 10px 0 10px 0;
+}
+ul.blockList {
+  padding : 0;
+}
+ul.blockList ul.blockList li.blockList {
+  padding : 0px 20px 5px 10px;
+  border : 1px solid #ededed;
+  background-color : #f8f8f8;
+}
+ul.blockList ul.blockList ul.blockList li.blockList {
+  padding : 0 0 5px 8px;
+  background-color : #ffffff;
+  border : none;
+}
+ul.blockList li.blockList {
+  list-style : none;
+  margin-bottom : 15px;
+  line-height : 1.4;
+}
+div.details ul.blockList ul.blockList ul.blockList li.blockList h4  {
+  background-color : #dee3e9;
+  border : 1px solid #d0d9e0;
+  margin : 0 0 6px -8px;
+  padding : 7px 5px;
+}
+.title {
+  color : #2c4557;
+  margin : 0;
+  font-weight : bold;
+}
+hr {
+  unicode-bidi : isolate;
+  margin-block-start : 0.5em;
+  margin-block-end : 0.5em;
+  margin-inline-start : auto;
+  margin-inline-end : auto;
+  overflow : hidden;
+  border-style : inset;
+  border-width : 1px;
+}
+div.concept-header .title, div.concept-header .short-description {
+  margin : 0;
+}
+a:link, a:visited {
+  color : #4A6782;
+  text-decoration : none;
+}
+ a[href]:hover, a[href]:focus {
+  color : #bb7a2a;
+  text-decoration : none;
+}
+.nav {
+  display : flex;
+  background-color : #4D7A97;
+  color : #FFFFFF;
+  padding-top : 10px;
+  font-size : 12px;
+  height : 2.8em;
+  width : 100%;
+  clear : right;
+}
+.nav a:link, .nav a:active, .nav a:visited {
+  color : #FFFFFF;
+  text-decoration : none;
+}
+ .nav a:hover, .nav a:focus {
+  color : #bb7a2a;
+  text-decoration : none;
+}
+.info {
+  margin-left : auto;
+}
+.info p {
+  margin : 7px;
+}
+.short-description {
+  font-style : italic;
+}
+ul, ol {
+  margin : 0;
+  padding-left : 20px;
+}
+.property-doc {
+  padding-left : 5px;
+  border-left : 1px solid #dddddd;
+  margin-left : 10px;
+  margin-bottom : 10px;
+}
+table tr td dl, table tr td dl dt, table tr td dl dd {
+  margin-top : 0;
+  margin-bottom : 1px;
+}
+.aspects-table, .concepts-table {
+  width : 100%;
+  border-collapse : colapse;
+  text-indent : initial;
+  border-left : 1px solid #EEE;
+  border-right : 1px solid #EEE;
+  border-bottom : 1px solid #EEE;
+  border-spacing : 2px;
+}
+.aspects-table caption, .concepts-table caption {
+  color : #253441;
+  font-weight : bold;
+}
+.aspects-table caption span, .concepts-table caption span {
+  padding-top : 5px;
+  padding-left : 12px;
+  padding-right : 12px;
+  padding-bottom : 7px;
+  float : left;
+  background-color : #F8981D;
+  border : none;
+  height : 16px;
+}
+.aspects-table td, .concepts-table td, {
+  padding : 0px 0px 12px 10px;
+  text-align : left;
+}
+td.colFirst,  th.colFirst {
+  width : 25%;
+  vertical-align : top;
+  font-size : 13px;
+}
+td.colLast,  th.colLast {
+  vertical-align : top;
+  font-size : 13px;
+}
+th.colFirst, th.colLast {
+  background : #dee3e9;
+  text-align : left;
+  padding : 8px 3px 3px 7px;
+}
+th.colFirst, th.colLast, td.colFirst, td.colLast {
+  padding-right : 0px;
+  padding-top : 8px;
+  padding-bottom : 8px;
+}
+.altColor {
+  background-color : #FFFFFF;
+}
+.rowColor {
+  background-color : #EEEEEF;
+}
+div.block {
+  font-size : 14px;
+  font-family : 'DejaVu Serif', Georgia, "Times New Roman", Times, serif;
+}
+.header {
+  clear : both;
+  margin : 0 20px;
+  padding : 5px 0 0 0;
+}
+.title {
+  color : #2c4557;
+  margin : 20px 0;
+}
+.subTitle {
+  margin : 5px 0 0 0;
+}
+.contentContainer {
+  clear : both;
+  padding : 10px 20px;
+  position : relative;
+}
+td.colFirst a:link {
+  font-weight : bold;
+}
+ul.navList {
+  float : left;
+  margin : 0 25px 0 0;
+  padding : 0;
+}
+ul.navList li {
+  list-style : none;
+  float : left;
+  padding : 5px 6px;
+}
+.subNav {
+   background-color : #dee3e9;
+  float : left;
+  width : 100%;
+  overflow : hidden;
+  font-size : 12px;
+}
+.inheritance {
+  margin : 0;
+  padding : 0;
+}
+ul.inheritance li {
+  list-style : none;
+}

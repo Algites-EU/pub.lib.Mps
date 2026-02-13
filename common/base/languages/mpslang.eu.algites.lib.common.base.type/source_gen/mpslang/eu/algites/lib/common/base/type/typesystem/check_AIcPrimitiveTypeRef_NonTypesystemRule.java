@@ -28,7 +28,7 @@ public class check_AIcPrimitiveTypeRef_NonTypesystemRule extends AbstractNonType
     }
   }
   public SAbstractConcept getApplicableConcept() {
-    return CONCEPTS.AIcPrimitiveTypeRef$Gx;
+    return CONCEPTS.AIcPrimitiveTypeDescriptor$Gx;
   }
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {
     return new IsApplicableStatus(argument.getConcept().isSubConceptOf(getApplicableConcept()), null);
@@ -42,6 +42,6 @@ public class check_AIcPrimitiveTypeRef_NonTypesystemRule extends AbstractNonType
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept AIcPrimitiveTypeRef$Gx = MetaAdapterFactory.getConcept(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1a987L, "mpslang.eu.algites.lib.common.base.type.structure.AIcPrimitiveTypeRef");
+    /*package*/ static final SConcept AIcPrimitiveTypeDescriptor$Gx = MetaAdapterFactory.getConcept(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1a987L, "mpslang.eu.algites.lib.common.base.type.structure.AIcPrimitiveTypeDescriptor");
   }
 }

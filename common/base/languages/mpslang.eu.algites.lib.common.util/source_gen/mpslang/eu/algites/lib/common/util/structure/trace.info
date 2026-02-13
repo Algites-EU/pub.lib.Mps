@@ -15,7 +15,7 @@
       <unit at="10,0,28,0" name="mpslang.eu.algites.lib.common.util.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="14,0,59,0" name="mpslang.eu.algites.lib.common.util.structure.StructureAspectDescriptor" />
+      <unit at="14,0,58,0" name="mpslang.eu.algites.lib.common.util.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:3630e077-1428-44b0-a6dc-f74df5328867(mpslang.eu.algites.lib.common.util.structure)/6637564721400674170">
@@ -39,17 +39,16 @@
       <node id="6637564721400674170" at="37,45,38,36" concept="4" />
       <node id="6637564721400674170" at="49,69,50,180" concept="3" />
       <node id="6637564721400674170" at="50,180,51,19" concept="0" />
-      <node id="6637564721400674170" at="51,19,52,76" concept="0" />
-      <node id="6637564721400674170" at="52,76,53,121" concept="0" />
+      <node id="6637564721400674170" at="51,19,52,75" concept="0" />
+      <node id="6637564721400674170" at="52,75,53,121" concept="0" />
       <node id="6637564721400674170" at="53,121,54,17" concept="0" />
-      <node id="6637564721400680267" at="54,17,55,168" concept="0" />
-      <node id="6637564721400674170" at="55,168,56,22" concept="4" />
-      <node id="6637564721400674170" at="49,0,58,0" concept="6" trace="createDescriptorForAIiIterator#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="6637564721400674170" at="54,17,55,22" concept="4" />
+      <node id="6637564721400674170" at="49,0,57,0" concept="6" trace="createDescriptorForAIiIterator#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="6637564721400674170" at="37,45,38,36" />
-      <scope id="6637564721400674170" at="49,69,56,22">
+      <scope id="6637564721400674170" at="49,69,55,22">
         <var name="b" id="6637564721400674170" />
       </scope>
-      <scope id="6637564721400674170" at="49,0,58,0" />
+      <scope id="6637564721400674170" at="49,0,57,0" />
     </file>
   </root>
 </debug-info>

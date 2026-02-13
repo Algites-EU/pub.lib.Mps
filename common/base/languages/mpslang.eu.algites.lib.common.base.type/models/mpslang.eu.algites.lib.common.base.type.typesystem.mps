@@ -178,7 +178,7 @@
     </node>
     <node concept="1YaCAy" id="5f7PrScGwJD" role="1YuTPh">
       <property role="TrG5h" value="aConceptTypeRef" />
-      <ref role="1YaFvo" to="ydau:5Ktnv9wKqGP" resolve="AIcConceptTypeRef" />
+      <ref role="1YaFvo" to="ydau:5Ktnv9wKqGP" resolve="AIcConceptTypeDescriptor" />
     </node>
   </node>
   <node concept="18kY7G" id="5f7PrScGzAJ">
@@ -210,7 +210,7 @@
     </node>
     <node concept="1YaCAy" id="5f7PrScGzAM" role="1YuTPh">
       <property role="TrG5h" value="aPrimitiveTypeRef" />
-      <ref role="1YaFvo" to="ydau:5Ktnv9wKqA7" resolve="AIcPrimitiveTypeRef" />
+      <ref role="1YaFvo" to="ydau:5Ktnv9wKqA7" resolve="AIcPrimitiveTypeDescriptor" />
     </node>
   </node>
   <node concept="18kY7G" id="5f7PrScGGBz">
@@ -224,14 +224,14 @@
               <ref role="1YBMHb" node="5f7PrScGGBA" resolve="aParametrizedTypeRef" />
             </node>
             <node concept="3TrEf2" id="5f7PrScGIxN" role="2OqNvi">
-              <ref role="3Tt5mk" to="ydau:5f7PrScGFfZ" resolve="rawType" />
+              <ref role="3Tt5mk" to="ydau:5f7PrScGFfZ" resolve="baseType" />
             </node>
           </node>
         </node>
         <node concept="3clFbS" id="5f7PrScGGBV" role="3clFbx">
           <node concept="2MkqsV" id="5f7PrScGIZk" role="3cqZAp">
             <node concept="Xl_RD" id="5f7PrScGIZt" role="2MkJ7o">
-              <property role="Xl_RC" value="Parametrized type ref needs to have defined its raw type" />
+              <property role="Xl_RC" value="Generic type needs to have defined its base type" />
             </node>
             <node concept="1YBJjd" id="5f7PrScGJ0k" role="1urrMF">
               <ref role="1YBMHb" node="5f7PrScGGBA" resolve="aParametrizedTypeRef" />
@@ -406,7 +406,153 @@
     </node>
     <node concept="1YaCAy" id="5f7PrScGGBA" role="1YuTPh">
       <property role="TrG5h" value="aParametrizedTypeRef" />
-      <ref role="1YaFvo" to="ydau:5Ktnv9wKrZ$" resolve="AIcParametrizedTypeRef" />
+      <ref role="1YaFvo" to="ydau:5Ktnv9wKrZ$" resolve="AIcGenericTypeDescriptor" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="s87oAazXJ6">
+    <property role="TrG5h" value="check_AIcTypeParamUsage" />
+    <node concept="3clFbS" id="s87oAazXJ7" role="18ibNy">
+      <node concept="3clFbJ" id="s87oAazXJp" role="3cqZAp">
+        <node concept="3clFbC" id="s87oAazYs6" role="3clFbw">
+          <node concept="10Nm6u" id="s87oAazYyc" role="3uHU7w" />
+          <node concept="2OqwBi" id="s87oAazXUv" role="3uHU7B">
+            <node concept="1YBJjd" id="s87oAazXJ_" role="2Oq$k0">
+              <ref role="1YBMHb" node="s87oAazXJ9" resolve="aTypeParamUsage" />
+            </node>
+            <node concept="3TrEf2" id="s87oAazY75" role="2OqNvi">
+              <ref role="3Tt5mk" to="ydau:s87oAazSJv" resolve="typeParam" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="s87oAazXJr" role="3clFbx">
+          <node concept="2MkqsV" id="s87oAazYyR" role="3cqZAp">
+            <node concept="Xl_RD" id="s87oAazYz0" role="2MkJ7o">
+              <property role="Xl_RC" value="Missing the typeParam parameter" />
+            </node>
+            <node concept="1YBJjd" id="s87oAazYzR" role="1urrMF">
+              <ref role="1YBMHb" node="s87oAazXJ9" resolve="aTypeParamUsage" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="s87oAazXJ9" role="1YuTPh">
+      <property role="TrG5h" value="aTypeParamUsage" />
+      <ref role="1YaFvo" to="ydau:5Ktnv9wKsiN" resolve="AIcTypeParamUsage" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="s87oAa$0rd">
+    <property role="TrG5h" value="check_AIcTypeParamDef" />
+    <node concept="3clFbS" id="s87oAa$0re" role="18ibNy">
+      <node concept="3clFbJ" id="s87oAa$0rz" role="3cqZAp">
+        <node concept="3clFbS" id="s87oAa$0r_" role="3clFbx">
+          <node concept="2MkqsV" id="s87oAa$4tp" role="3cqZAp">
+            <node concept="Xl_RD" id="s87oAa$4ty" role="2MkJ7o">
+              <property role="Xl_RC" value="Indentifier cannot be empty or blank" />
+            </node>
+            <node concept="1YBJjd" id="s87oAaABRM" role="1urrMF">
+              <ref role="1YBMHb" node="s87oAa$0rg" resolve="aTypeParamDef" />
+            </node>
+          </node>
+        </node>
+        <node concept="22lmx$" id="s87oAa$2tt" role="3clFbw">
+          <node concept="3clFbC" id="s87oAaA___" role="3uHU7w">
+            <node concept="3cmrfG" id="s87oAaAAij" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+            <node concept="2OqwBi" id="s87oAaAyqR" role="3uHU7B">
+              <node concept="2OqwBi" id="s87oAaAuE1" role="2Oq$k0">
+                <node concept="2OqwBi" id="s87oAa$2E_" role="2Oq$k0">
+                  <node concept="1YBJjd" id="s87oAa$2u4" role="2Oq$k0">
+                    <ref role="1YBMHb" node="s87oAa$0rg" resolve="aTypeParamDef" />
+                  </node>
+                  <node concept="3TrcHB" id="s87oAa$33k" role="2OqNvi">
+                    <ref role="3TsBF5" to="ydau:s87oAaxL7k" resolve="identifier" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="s87oAaAy17" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.trim()" resolve="trim" />
+                </node>
+              </node>
+              <node concept="liA8E" id="s87oAaAyRF" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="s87oAa$2b7" role="3uHU7B">
+            <node concept="2OqwBi" id="s87oAa$0V0" role="3uHU7B">
+              <node concept="1YBJjd" id="s87oAa$0KS" role="2Oq$k0">
+                <ref role="1YBMHb" node="s87oAa$0rg" resolve="aTypeParamDef" />
+              </node>
+              <node concept="3TrcHB" id="s87oAa$1i5" role="2OqNvi">
+                <ref role="3TsBF5" to="ydau:s87oAaxL7k" resolve="identifier" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="s87oAa$2t1" role="3uHU7w" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="s87oAa$0rg" role="1YuTPh">
+      <property role="TrG5h" value="aTypeParamDef" />
+      <ref role="1YaFvo" to="ydau:5Ktnv9wKs6g" resolve="AIcTypeParamDef" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="s87oAaE3E_">
+    <property role="TrG5h" value="check_AIcJavaTypeDescriptor" />
+    <node concept="3clFbS" id="s87oAaE3EA" role="18ibNy">
+      <node concept="3clFbJ" id="s87oAaE3F1" role="3cqZAp">
+        <node concept="3clFbS" id="s87oAaE3F3" role="3clFbx">
+          <node concept="2MkqsV" id="s87oAaEcJl" role="3cqZAp">
+            <node concept="Xl_RD" id="s87oAaEcJu" role="2MkJ7o">
+              <property role="Xl_RC" value="qualifiedJavaTypeName must be defined" />
+            </node>
+            <node concept="1YBJjd" id="s87oAaEcKl" role="1urrMF">
+              <ref role="1YBMHb" node="s87oAaE3EC" resolve="aJavaTypeDescriptor" />
+            </node>
+          </node>
+        </node>
+        <node concept="22lmx$" id="s87oAaE5p8" role="3clFbw">
+          <node concept="3clFbC" id="s87oAaEbuy" role="3uHU7w">
+            <node concept="3cmrfG" id="s87oAaEcaU" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+            <node concept="2OqwBi" id="s87oAaE7wJ" role="3uHU7B">
+              <node concept="2OqwBi" id="s87oAaE6$A" role="2Oq$k0">
+                <node concept="2OqwBi" id="s87oAaE5B9" role="2Oq$k0">
+                  <node concept="1YBJjd" id="s87oAaE5rO" role="2Oq$k0">
+                    <ref role="1YBMHb" node="s87oAaE3EC" resolve="aJavaTypeDescriptor" />
+                  </node>
+                  <node concept="3TrcHB" id="s87oAaE65g" role="2OqNvi">
+                    <ref role="3TsBF5" to="ydau:s87oAaBsHD" resolve="qualifiedJavaTypeName" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="s87oAaE76x" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.trim()" resolve="trim" />
+                </node>
+              </node>
+              <node concept="liA8E" id="s87oAaE8My" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="s87oAaE56M" role="3uHU7B">
+            <node concept="2OqwBi" id="s87oAaE413" role="3uHU7B">
+              <node concept="1YBJjd" id="s87oAaE3Q9" role="2Oq$k0">
+                <ref role="1YBMHb" node="s87oAaE3EC" resolve="aJavaTypeDescriptor" />
+              </node>
+              <node concept="3TrcHB" id="s87oAaE4dD" role="2OqNvi">
+                <ref role="3TsBF5" to="ydau:s87oAaBsHD" resolve="qualifiedJavaTypeName" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="s87oAaE5oG" role="3uHU7w" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="s87oAaE3EC" role="1YuTPh">
+      <property role="TrG5h" value="aJavaTypeDescriptor" />
+      <ref role="1YaFvo" to="ydau:s87oAaBsHC" resolve="AIcJavaTypeDescriptor" />
     </node>
   </node>
 </model>

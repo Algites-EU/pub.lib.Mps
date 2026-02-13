@@ -9,21 +9,25 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int AIcConceptTypeRef = 0;
-  public static final int AIcParametrizedTypeRef = 1;
-  public static final int AIcPrimitiveTypeRef = 2;
-  public static final int AIcTypeParam = 3;
-  public static final int AIcTypeParamRef = 4;
-  public static final int AIcTypeRef = 5;
+  public static final int AIcConceptTypeDescriptor = 0;
+  public static final int AIcGenericTypeDescriptor = 1;
+  public static final int AIcJavaTypeDescriptor = 2;
+  public static final int AIcPrimitiveTypeDescriptor = 3;
+  public static final int AIcTypeDescriptor = 4;
+  public static final int AIcTypeParamDef = 5;
+  public static final int AIcTypeParamUsage = 6;
+  public static final int AIiTypeParamOwner = 7;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL);
-    builder.put(0x5c1d5df260c1ab35L, AIcConceptTypeRef);
-    builder.put(0x5c1d5df260c1bfe4L, AIcParametrizedTypeRef);
-    builder.put(0x5c1d5df260c1a987L, AIcPrimitiveTypeRef);
-    builder.put(0x5c1d5df260c1c190L, AIcTypeParam);
-    builder.put(0x5c1d5df260c1c4b3L, AIcTypeParamRef);
-    builder.put(0x5c1d5df260c1a984L, AIcTypeRef);
+    builder.put(0x5c1d5df260c1ab35L, AIcConceptTypeDescriptor);
+    builder.put(0x5c1d5df260c1bfe4L, AIcGenericTypeDescriptor);
+    builder.put(0x7081d898a9dcb68L, AIcJavaTypeDescriptor);
+    builder.put(0x5c1d5df260c1a987L, AIcPrimitiveTypeDescriptor);
+    builder.put(0x5c1d5df260c1a984L, AIcTypeDescriptor);
+    builder.put(0x5c1d5df260c1c190L, AIcTypeParamDef);
+    builder.put(0x5c1d5df260c1c4b3L, AIcTypeParamUsage);
+    builder.put(0x7081d898a9047a8L, AIiTypeParamOwner);
     myIndex = builder.seal();
   }
 

@@ -21,8 +21,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SProperty;
 
-public final class AIcConceptTypeRef__BehaviorDescriptor extends BaseBHDescriptor {
-  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1ab35L, "mpslang.eu.algites.lib.common.base.type.structure.AIcConceptTypeRef");
+public final class AIcTypeParamUsage__BehaviorDescriptor extends BaseBHDescriptor {
+  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1c4b3L, "mpslang.eu.algites.lib.common.base.type.structure.AIcTypeParamUsage");
 
   public static final SMethod<String> render_id5Ktnv9wJTN1 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("render").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6637564721400618177L).languageId(0x9ff14edcb48cb677L, 0x38741375005249b3L).build2();
 
@@ -32,20 +32,13 @@ public final class AIcConceptTypeRef__BehaviorDescriptor extends BaseBHDescripto
   }
 
   /*package*/ static String render_id5Ktnv9wJTN1(@NotNull SNode __thisNode__) {
-    String locName;
-    if (SLinkOperations.getTarget(__thisNode__, LINKS.concept$mnDd) != null) {
-      if (SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, LINKS.concept$mnDd), LINKS.cpnt$Miim) != null) {
-        locName = "<" + SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, LINKS.concept$mnDd), LINKS.cpnt$Miim), PROPS.name$MnvL) + ">";
-      } else {
-        locName = "<unresolved-concept>";
-      }
-    } else {
-      locName = "<no-concept>";
+    if (SLinkOperations.getTarget(__thisNode__, LINKS.typeParam$1Cc9) == null) {
+      return "?";
     }
-    return "AIcConceptTypeRef" + locName;
+    return SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.typeParam$1Cc9), PROPS.identifier$4G1F);
   }
 
-  /*package*/ AIcConceptTypeRef__BehaviorDescriptor() {
+  /*package*/ AIcTypeParamUsage__BehaviorDescriptor() {
   }
 
   @Override
@@ -92,11 +85,10 @@ public final class AIcConceptTypeRef__BehaviorDescriptor extends BaseBHDescripto
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink concept$mnDd = MetaAdapterFactory.getReferenceLink(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1ab35L, 0x53c7d5be0caf4cafL, "concept");
-    /*package*/ static final SReferenceLink cpnt$Miim = MetaAdapterFactory.getReferenceLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0x6ed0e6c2f31b3f42L, 0x6ed0e6c2f31b3f67L, "cpnt");
+    /*package*/ static final SReferenceLink typeParam$1Cc9 = MetaAdapterFactory.getReferenceLink(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1c4b3L, 0x7081d898a8f8bdfL, "typeParam");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty identifier$4G1F = MetaAdapterFactory.getProperty(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1c190L, 0x7081d898a8711d4L, "identifier");
   }
 }

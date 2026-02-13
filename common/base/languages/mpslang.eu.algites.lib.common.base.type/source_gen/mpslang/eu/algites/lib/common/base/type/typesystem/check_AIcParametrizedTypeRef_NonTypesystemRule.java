@@ -21,10 +21,10 @@ public class check_AIcParametrizedTypeRef_NonTypesystemRule extends AbstractNonT
   public check_AIcParametrizedTypeRef_NonTypesystemRule() {
   }
   public void applyRule(final SNode aParametrizedTypeRef, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    if (SLinkOperations.getTarget(aParametrizedTypeRef, LINKS.rawType$p1DC) == null) {
+    if (SLinkOperations.getTarget(aParametrizedTypeRef, LINKS.baseType$p1DC) == null) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(aParametrizedTypeRef, "Parametrized type ref needs to have defined its raw type", "r:dd7da66f-6c7b-4348-ba60-c1b8a5d64ae5(mpslang.eu.algites.lib.common.base.type.typesystem)", "6037028837746995156", null, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(aParametrizedTypeRef, "Generic type needs to have defined its base type", "r:dd7da66f-6c7b-4348-ba60-c1b8a5d64ae5(mpslang.eu.algites.lib.common.base.type.typesystem)", "6037028837746995156", null, errorTarget);
       }
     }
     if (ListSequence.fromList(SLinkOperations.getChildren(aParametrizedTypeRef, LINKS.typeArguments$p6NY)).count() == 0) {
@@ -50,7 +50,7 @@ public class check_AIcParametrizedTypeRef_NonTypesystemRule extends AbstractNonT
     }
   }
   public SAbstractConcept getApplicableConcept() {
-    return CONCEPTS.AIcParametrizedTypeRef$mM;
+    return CONCEPTS.AIcGenericTypeDescriptor$mM;
   }
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {
     return new IsApplicableStatus(argument.getConcept().isSubConceptOf(getApplicableConcept()), null);
@@ -60,11 +60,11 @@ public class check_AIcParametrizedTypeRef_NonTypesystemRule extends AbstractNonT
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink rawType$p1DC = MetaAdapterFactory.getContainmentLink(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1bfe4L, 0x53c7d5be0cb2b3ffL, "rawType");
+    /*package*/ static final SContainmentLink baseType$p1DC = MetaAdapterFactory.getContainmentLink(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1bfe4L, 0x53c7d5be0cb2b3ffL, "baseType");
     /*package*/ static final SContainmentLink typeArguments$p6NY = MetaAdapterFactory.getContainmentLink(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1bfe4L, 0x53c7d5be0cb2b400L, "typeArguments");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept AIcParametrizedTypeRef$mM = MetaAdapterFactory.getConcept(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1bfe4L, "mpslang.eu.algites.lib.common.base.type.structure.AIcParametrizedTypeRef");
+    /*package*/ static final SConcept AIcGenericTypeDescriptor$mM = MetaAdapterFactory.getConcept(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1bfe4L, "mpslang.eu.algites.lib.common.base.type.structure.AIcGenericTypeDescriptor");
   }
 }

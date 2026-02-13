@@ -12,11 +12,12 @@ import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
-  private final BHDescriptor myAIcPrimitiveTypeRef__BehaviorDescriptor = new AIcPrimitiveTypeRef__BehaviorDescriptor();
-  private final BHDescriptor myAIcConceptTypeRef__BehaviorDescriptor = new AIcConceptTypeRef__BehaviorDescriptor();
-  private final BHDescriptor myAIcParametrizedTypeRef__BehaviorDescriptor = new AIcParametrizedTypeRef__BehaviorDescriptor();
-  private final BHDescriptor myAIcTypeParam__BehaviorDescriptor = new AIcTypeParam__BehaviorDescriptor();
-  private final BHDescriptor myAIcTypeParamRef__BehaviorDescriptor = new AIcTypeParamRef__BehaviorDescriptor();
+  private final BHDescriptor myAIcJavaTypeDescriptor__BehaviorDescriptor = new AIcJavaTypeDescriptor__BehaviorDescriptor();
+  private final BHDescriptor myAIcPrimitiveTypeDescriptor__BehaviorDescriptor = new AIcPrimitiveTypeDescriptor__BehaviorDescriptor();
+  private final BHDescriptor myAIcConceptTypeDescriptor__BehaviorDescriptor = new AIcConceptTypeDescriptor__BehaviorDescriptor();
+  private final BHDescriptor myAIcGenericTypeDescriptor__BehaviorDescriptor = new AIcGenericTypeDescriptor__BehaviorDescriptor();
+  private final BHDescriptor myAIcTypeParamDef__BehaviorDescriptor = new AIcTypeParamDef__BehaviorDescriptor();
+  private final BHDescriptor myAIcTypeParamUsage__BehaviorDescriptor = new AIcTypeParamUsage__BehaviorDescriptor();
 
   public BehaviorAspectDescriptor() {
   }
@@ -26,18 +27,20 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
     SAbstractConcept cncpt = concept;
     switch (conceptIndex.index(cncpt)) {
       case 0:
-        return myAIcConceptTypeRef__BehaviorDescriptor;
+        return myAIcConceptTypeDescriptor__BehaviorDescriptor;
       case 1:
-        return myAIcParametrizedTypeRef__BehaviorDescriptor;
+        return myAIcGenericTypeDescriptor__BehaviorDescriptor;
       case 2:
-        return myAIcPrimitiveTypeRef__BehaviorDescriptor;
+        return myAIcJavaTypeDescriptor__BehaviorDescriptor;
       case 3:
-        return myAIcTypeParam__BehaviorDescriptor;
+        return myAIcPrimitiveTypeDescriptor__BehaviorDescriptor;
       case 4:
-        return myAIcTypeParamRef__BehaviorDescriptor;
+        return myAIcTypeParamDef__BehaviorDescriptor;
+      case 5:
+        return myAIcTypeParamUsage__BehaviorDescriptor;
       default:
     }
     return null;
   }
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1ab35L), MetaIdFactory.conceptId(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1bfe4L), MetaIdFactory.conceptId(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1a987L), MetaIdFactory.conceptId(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1c190L), MetaIdFactory.conceptId(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1c4b3L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1ab35L), MetaIdFactory.conceptId(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1bfe4L), MetaIdFactory.conceptId(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x7081d898a9dcb68L), MetaIdFactory.conceptId(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1a987L), MetaIdFactory.conceptId(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1c190L), MetaIdFactory.conceptId(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1c4b3L)).seal();
 }

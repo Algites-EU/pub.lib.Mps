@@ -20,8 +20,8 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
 
-public final class AIcPrimitiveTypeRef__BehaviorDescriptor extends BaseBHDescriptor {
-  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1a987L, "mpslang.eu.algites.lib.common.base.type.structure.AIcPrimitiveTypeRef");
+public final class AIcPrimitiveTypeDescriptor__BehaviorDescriptor extends BaseBHDescriptor {
+  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1a987L, "mpslang.eu.algites.lib.common.base.type.structure.AIcPrimitiveTypeDescriptor");
 
   public static final SMethod<String> render_id5Ktnv9wJTN1 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("render").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6637564721400618177L).languageId(0x9ff14edcb48cb677L, 0x38741375005249b3L).build2();
 
@@ -33,14 +33,14 @@ public final class AIcPrimitiveTypeRef__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ static String render_id5Ktnv9wJTN1(@NotNull SNode __thisNode__) {
     String locName;
     if (SPropertyOperations.getEnum(__thisNode__, PROPS.kind$wAMd) == null) {
-      locName = "<undefined-kind>";
+      locName = "UNDEFINED-KIND";
     } else {
       locName = SEnumOperations.getMemberName0(SPropertyOperations.getEnum(__thisNode__, PROPS.kind$wAMd));
     }
-    return "AIcPrimitiveTypeRef<" + locName + ">";
+    return locName;
   }
 
-  /*package*/ AIcPrimitiveTypeRef__BehaviorDescriptor() {
+  /*package*/ AIcPrimitiveTypeDescriptor__BehaviorDescriptor() {
   }
 
   @Override

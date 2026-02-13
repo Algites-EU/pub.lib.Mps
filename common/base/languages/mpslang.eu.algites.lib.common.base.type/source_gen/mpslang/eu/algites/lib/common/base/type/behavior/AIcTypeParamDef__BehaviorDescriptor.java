@@ -13,12 +13,18 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import mpslang.eu.algites.lib.common.base.behavior.AIiObject__BehaviorDescriptor;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
+import org.jetbrains.mps.openapi.language.SProperty;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 
-public final class AIcTypeParam__BehaviorDescriptor extends BaseBHDescriptor {
-  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1c190L, "mpslang.eu.algites.lib.common.base.type.structure.AIcTypeParam");
+public final class AIcTypeParamDef__BehaviorDescriptor extends BaseBHDescriptor {
+  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1c190L, "mpslang.eu.algites.lib.common.base.type.structure.AIcTypeParamDef");
 
   public static final SMethod<String> render_id5Ktnv9wJTN1 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("render").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6637564721400618177L).languageId(0x9ff14edcb48cb677L, 0x38741375005249b3L).build2();
 
@@ -28,10 +34,22 @@ public final class AIcTypeParam__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ static String render_id5Ktnv9wJTN1(@NotNull SNode __thisNode__) {
-    return "";
+    String locResult = SPropertyOperations.getString(__thisNode__, PROPS.identifier$4G1F);
+    if (SLinkOperations.getChildren(__thisNode__, LINKS.upperBounds$4GgG) != null && !(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.upperBounds$4GgG)).isEmpty())) {
+      locResult = locResult + " extends ";
+      boolean locIsFirst = true;
+      for (SNode locTypeDescriptor : SLinkOperations.getChildren(__thisNode__, LINKS.upperBounds$4GgG)) {
+        if (locIsFirst) {
+          locResult = locResult + " & ";
+        }
+        locResult = locResult + AIiObject__BehaviorDescriptor.render_id5Ktnv9wJTN1.invoke(locTypeDescriptor);
+        locIsFirst = false;
+      }
+    }
+    return locResult;
   }
 
-  /*package*/ AIcTypeParam__BehaviorDescriptor() {
+  /*package*/ AIcTypeParamDef__BehaviorDescriptor() {
   }
 
   @Override
@@ -75,5 +93,13 @@ public final class AIcTypeParam__BehaviorDescriptor extends BaseBHDescriptor {
   @Override
   public SAbstractConcept getConcept() {
     return CONCEPT;
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty identifier$4G1F = MetaAdapterFactory.getProperty(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1c190L, 0x7081d898a8711d4L, "identifier");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink upperBounds$4GgG = MetaAdapterFactory.getContainmentLink(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1c190L, 0x7081d898a8711d5L, "upperBounds");
   }
 }

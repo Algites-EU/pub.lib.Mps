@@ -22,7 +22,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
-    deps.extendedLanguage(0x38741375005249b3L, 0x9ff14edcb48cb677L, "mpslang.eu.algites.lib.common.base");
+    deps.extendedLanguage(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, "mpslang.eu.algites.lib.common.base.type");
   }
 
   @Override
@@ -49,10 +49,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForAIiIterator() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("mpslang.eu.algites.lib.common.util", "AIiIterator", 0x1fcc140d3b7340fbL, 0xa4493b2598f356c4L, 0x5c1d5df260c0777aL);
     b.interface_();
-    b.parent(0x38741375005249b3L, 0x9ff14edcb48cb677L, 0x5c1d5df260bf9cadL);
+    b.parent(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x7081d898a9047a8L);
     b.origin("r:3630e077-1428-44b0-a6dc-f74df5328867(mpslang.eu.algites.lib.common.util.structure)/6637564721400674170");
     b.version(3);
-    b.associate("elementType", 0x5c1d5df260c08f4bL).target(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L).optional(true).origin("6637564721400680267").done();
     return b.create();
   }
 }

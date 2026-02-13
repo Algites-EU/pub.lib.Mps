@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-91jaow07xpjx0w84u1atifmoykje9ak">
-  <files names="AIcConceptTypeRef__BehaviorDescriptor.java:AIcParametrizedTypeRef__BehaviorDescriptor.java:AIcPrimitiveTypeRef__BehaviorDescriptor.java:AIcTypeParamRef__BehaviorDescriptor.java:AIcTypeParam__BehaviorDescriptor.java:BehaviorAspectDescriptor.java" />
+<product version="3" modelHash="7k9yv225ldrf0ej9lzfs4223q0ryk2z">
+  <files names="AIcConceptTypeDescriptor__BehaviorDescriptor.java:AIcGenericTypeDescriptor__BehaviorDescriptor.java:AIcJavaTypeDescriptor__BehaviorDescriptor.java:AIcPrimitiveTypeDescriptor__BehaviorDescriptor.java:AIcTypeParamDef__BehaviorDescriptor.java:AIcTypeParamUsage__BehaviorDescriptor.java:BehaviorAspectDescriptor.java" />
 </product>
 
