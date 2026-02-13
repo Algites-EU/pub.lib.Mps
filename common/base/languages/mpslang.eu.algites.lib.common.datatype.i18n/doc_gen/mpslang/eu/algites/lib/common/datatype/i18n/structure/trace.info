@@ -1,26 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
-    <file name="index.html">
-      <unit at="1,0,50,7" name="mpslang.eu.algites.lib.common.datatype.i18n.structure.index" />
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,46,0" name="mpslang.eu.algites.lib.common.datatype.i18n.structure.ConceptPresentationAspectImpl" />
     </file>
-    <file name="index_structure.html">
-      <unit at="1,0,105,7" name="mpslang.eu.algites.lib.common.datatype.i18n.structure.index_structure" />
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,32,0" name="mpslang.eu.algites.lib.common.datatype.i18n.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="15,0,89,0" name="mpslang.eu.algites.lib.common.datatype.i18n.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:936c57c6-2ecf-461a-93df-f432e7590aca(mpslang.eu.algites.lib.common.datatype.i18n.structure)/7375839405632632118">
-    <file name="7375839405632632118_AConcept.html">
-      <unit id="7375839405632632118" at="1,0,132,7" name="mpslang.eu.algites.lib.common.datatype.i18n.structure.7375839405632632118_AConcept" />
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="7375839405632632118" at="13,0,14,0" concept="1" trace="props_AIcLanguageDef" />
+      <node id="7375839405632632118" at="29,43,30,76" concept="3" />
+      <node id="7375839405632632118" at="30,76,31,42" concept="0" />
+      <node id="7375839405632632118" at="31,42,32,46" concept="0" />
+      <node id="7375839405632632118" at="33,9,34,36" concept="4" />
+      <node id="7375839405632632118" at="28,48,33,9" concept="2" />
+      <scope id="7375839405632632118" at="29,43,32,46">
+        <var name="cpb" id="7375839405632632118" />
+      </scope>
+      <scope id="7375839405632632118" at="28,48,34,36" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="7375839405632632118" at="13,0,14,0" concept="5" trace="AIcLanguageDef" />
+      <node id="7375839405632632118" at="18,57,19,53" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="7375839405632632118" at="17,0,18,0" concept="1" trace="myConceptAIcLanguageDef" />
+      <node id="7375839405632632118" at="42,48,43,39" concept="4" />
+      <node id="7375839405632632118" at="65,72,66,192" concept="3" />
+      <node id="7375839405632632118" at="66,192,67,34" concept="0" />
+      <node id="7375839405632632118" at="67,34,68,130" concept="0" />
+      <node id="7375839405632632118" at="68,130,69,17" concept="0" />
+      <node id="7375839405632632119" at="69,17,70,120" concept="0" />
+      <node id="7375839405632632120" at="70,120,71,122" concept="0" />
+      <node id="7375839405632632121" at="71,122,72,120" concept="0" />
+      <node id="7375839405632632122" at="72,120,73,117" concept="0" />
+      <node id="7375839405632632123" at="73,117,74,207" concept="0" />
+      <node id="7375839405632632118" at="74,207,75,24" concept="0" />
+      <node id="7375839405632632118" at="75,24,76,22" concept="4" />
+      <node id="7375839405632632118" at="65,0,78,0" concept="6" trace="createDescriptorForAIcLanguageDef#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="7375839405632632118" at="42,48,43,39" />
+      <scope id="7375839405632632118" at="65,72,76,22">
+        <var name="b" id="7375839405632632118" />
+      </scope>
+      <scope id="7375839405632632118" at="65,0,78,0" />
     </file>
   </root>
   <root nodeRef="r:936c57c6-2ecf-461a-93df-f432e7590aca(mpslang.eu.algites.lib.common.datatype.i18n.structure)/7375839405632633274">
-    <file name="7375839405632633274_AConcept.html">
-      <unit id="7375839405632633274" at="1,0,100,7" name="mpslang.eu.algites.lib.common.datatype.i18n.structure.7375839405632633274_AConcept" />
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="7375839405632633274" at="12,0,13,0" concept="1" trace="props_AIcLanguageCatalog" />
+      <node id="7375839405632633274" at="22,47,23,76" concept="3" />
+      <node id="7375839405632633274" at="23,76,24,43" concept="0" />
+      <node id="7375839405632633274" at="24,43,25,50" concept="0" />
+      <node id="7375839405632633274" at="26,9,27,40" concept="4" />
+      <node id="7375839405632633274" at="21,52,26,9" concept="2" />
+      <scope id="7375839405632633274" at="22,47,25,50">
+        <var name="cpb" id="7375839405632633274" />
+      </scope>
+      <scope id="7375839405632633274" at="21,52,27,40" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="7375839405632633274" at="12,0,13,0" concept="5" trace="AIcLanguageCatalog" />
+      <node id="7375839405632633274" at="17,116,18,57" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="7375839405632633274" at="16,0,17,0" concept="1" trace="myConceptAIcLanguageCatalog" />
+      <node id="7375839405632633274" at="40,52,41,43" concept="4" />
+      <node id="7375839405632633274" at="56,76,57,196" concept="3" />
+      <node id="7375839405632633274" at="57,196,58,33" concept="0" />
+      <node id="7375839405632633274" at="58,33,59,130" concept="0" />
+      <node id="7375839405632633274" at="59,130,60,17" concept="0" />
+      <node id="7375839405632633277" at="60,17,61,202" concept="0" />
+      <node id="7375839405632633274" at="61,202,62,25" concept="0" />
+      <node id="7375839405632633274" at="62,25,63,22" concept="4" />
+      <node id="7375839405632633274" at="56,0,65,0" concept="6" trace="createDescriptorForAIcLanguageCatalog#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="7375839405632633274" at="40,52,41,43" />
+      <scope id="7375839405632633274" at="56,76,63,22">
+        <var name="b" id="7375839405632633274" />
+      </scope>
+      <scope id="7375839405632633274" at="56,0,65,0" />
     </file>
   </root>
   <root nodeRef="r:936c57c6-2ecf-461a-93df-f432e7590aca(mpslang.eu.algites.lib.common.datatype.i18n.structure)/7375839405632635696">
-    <file name="7375839405632635696_AConcept.html">
-      <unit id="7375839405632635696" at="1,0,108,7" name="mpslang.eu.algites.lib.common.datatype.i18n.structure.7375839405632635696_AConcept" />
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="7375839405632635696" at="14,0,15,0" concept="1" trace="props_AIcStringLocalization" />
+      <node id="7375839405632635696" at="36,50,37,76" concept="3" />
+      <node id="7375839405632635696" at="37,76,38,45" concept="0" />
+      <node id="7375839405632635696" at="38,45,39,53" concept="0" />
+      <node id="7375839405632635696" at="40,9,41,43" concept="4" />
+      <node id="7375839405632635696" at="35,55,40,9" concept="2" />
+      <scope id="7375839405632635696" at="36,50,39,53">
+        <var name="cpb" id="7375839405632635696" />
+      </scope>
+      <scope id="7375839405632635696" at="35,55,41,43" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="7375839405632635696" at="14,0,15,0" concept="5" trace="AIcStringLocalization" />
+      <node id="7375839405632635696" at="19,53,20,60" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="7375839405632635696" at="18,0,19,0" concept="1" trace="myConceptAIcStringLocalization" />
+      <node id="7375839405632635696" at="44,55,45,46" concept="4" />
+      <node id="7375839405632635696" at="78,79,79,199" concept="3" />
+      <node id="7375839405632635696" at="79,199,80,34" concept="0" />
+      <node id="7375839405632635696" at="80,34,81,130" concept="0" />
+      <node id="7375839405632635696" at="81,130,82,17" concept="0" />
+      <node id="7375839405632635697" at="82,17,83,110" concept="0" />
+      <node id="7375839405632635698" at="83,110,84,202" concept="0" />
+      <node id="7375839405632635696" at="84,202,85,27" concept="0" />
+      <node id="7375839405632635696" at="85,27,86,22" concept="4" />
+      <node id="7375839405632635696" at="78,0,88,0" concept="6" trace="createDescriptorForAIcStringLocalization#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="7375839405632635696" at="44,55,45,46" />
+      <scope id="7375839405632635696" at="78,79,86,22">
+        <var name="b" id="7375839405632635696" />
+      </scope>
+      <scope id="7375839405632635696" at="78,0,88,0" />
     </file>
   </root>
 </debug-info>

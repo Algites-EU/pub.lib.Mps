@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <product version="3" modelHash="78dt7twr01axly63dty25lsdiq1cm1f">
-  <files names="6037028837746660131_EnumerationDeclaration.html:6637564721400547739_AConcept.html:6637564721400547748_AConcept.html:6637564721400584758_AConcept.html:6637564721400600617_AConcept.html:6637564721400618157_AConcept.html:ConceptPresentationAspectImpl.java:EnumerationDescriptor_AInPrimitiveKind.java:LanguageConceptSwitch.java:StructureAspectDescriptor.java:index.html:index_structure.html:style.css" />
+  <files names="ConceptPresentationAspectImpl.java:EnumerationDescriptor_AInPrimitiveKind.java:LanguageConceptSwitch.java:StructureAspectDescriptor.java" />
 </product>
 
