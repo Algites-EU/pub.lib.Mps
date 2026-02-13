@@ -18,6 +18,7 @@
   <uses module="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" kind="dp" />
   <uses module="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
   <uses module="38741375-0052-49b3-9ff1-4edcb48cb677(mpslang.eu.algites.lib.common.base)" kind="dp" />
+  <uses module="70f453cd-5d6c-40a7-ba13-8d10610c56bc(mpslang.eu.algites.lib.common.base.type)" kind="dp" />
   <uses module="1fcc140d-3b73-40fb-a449-3b2598f356c4(mpslang.eu.algites.lib.common.util)" kind="dp" />
 </dependenciesRoot>
 

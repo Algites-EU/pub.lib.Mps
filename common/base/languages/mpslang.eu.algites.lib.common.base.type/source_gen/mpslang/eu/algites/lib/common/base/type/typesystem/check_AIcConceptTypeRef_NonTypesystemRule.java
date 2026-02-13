@@ -28,7 +28,7 @@ public class check_AIcConceptTypeRef_NonTypesystemRule extends AbstractNonTypesy
     }
   }
   public SAbstractConcept getApplicableConcept() {
-    return CONCEPTS.AIcConceptTypeRef$vw;
+    return CONCEPTS.AIcConceptTypeDescriptor$vw;
   }
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {
     return new IsApplicableStatus(argument.getConcept().isSubConceptOf(getApplicableConcept()), null);
@@ -43,6 +43,6 @@ public class check_AIcConceptTypeRef_NonTypesystemRule extends AbstractNonTypesy
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept AIcConceptTypeRef$vw = MetaAdapterFactory.getConcept(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1ab35L, "mpslang.eu.algites.lib.common.base.type.structure.AIcConceptTypeRef");
+    /*package*/ static final SConcept AIcConceptTypeDescriptor$vw = MetaAdapterFactory.getConcept(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1ab35L, "mpslang.eu.algites.lib.common.base.type.structure.AIcConceptTypeDescriptor");
   }
 }

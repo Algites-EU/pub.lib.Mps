@@ -9,6 +9,8 @@ import org.jetbrains.mps.openapi.language.SLanguage;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
 import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
+import jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor;
+import mpslang.eu.algites.lib.common.util.typesystem.TypesystemDescriptor;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
 import mpslang.eu.algites.lib.common.util.structure.ConceptPresentationAspectImpl;
@@ -38,6 +40,7 @@ public class Language extends LanguageRuntime {
 
   @Override
   protected void fillExtendedLanguages(Collection<SLanguage> extendedLanguages) {
+    extendedLanguages.add(MetaAdapterFactory.getLanguage(SLanguageId.deserialize("70f453cd-5d6c-40a7-ba13-8d10610c56bc"), "mpslang.eu.algites.lib.common.base.type"));
     extendedLanguages.add(MetaAdapterFactory.getLanguage(SLanguageId.deserialize("38741375-0052-49b3-9ff1-4edcb48cb677"), "mpslang.eu.algites.lib.common.base"));
   }
 
@@ -45,6 +48,9 @@ public class Language extends LanguageRuntime {
   protected <T extends ILanguageAspect> T createAspect(Class<T> aspectClass) {
     if (aspectClass == BehaviorAspectDescriptor.class) {
       return aspectClass.cast(new mpslang.eu.algites.lib.common.util.behavior.BehaviorAspectDescriptor());
+    }
+    if (aspectClass == IHelginsDescriptor.class) {
+      return aspectClass.cast(new TypesystemDescriptor());
     }
     if (aspectClass == StructureAspectDescriptor.class) {
       return aspectClass.cast(new mpslang.eu.algites.lib.common.util.structure.StructureAspectDescriptor());

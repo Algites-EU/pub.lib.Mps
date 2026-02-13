@@ -13,12 +13,16 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import mpslang.eu.algites.lib.common.base.type.utils.AIsTypeParamUtils;
+import mpslang.eu.algites.lib.common.base.behavior.AIiObject__BehaviorDescriptor;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 
-public final class AIcTypeParam__BehaviorDescriptor extends BaseBHDescriptor {
-  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1c190L, "mpslang.eu.algites.lib.common.base.type.structure.AIcTypeParam");
+public final class AIcGenericTypeDescriptor__BehaviorDescriptor extends BaseBHDescriptor {
+  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1bfe4L, "mpslang.eu.algites.lib.common.base.type.structure.AIcGenericTypeDescriptor");
 
   public static final SMethod<String> render_id5Ktnv9wJTN1 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("render").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6637564721400618177L).languageId(0x9ff14edcb48cb677L, 0x38741375005249b3L).build2();
 
@@ -28,10 +32,13 @@ public final class AIcTypeParam__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ static String render_id5Ktnv9wJTN1(@NotNull SNode __thisNode__) {
-    return "";
+    if (SLinkOperations.getTarget(__thisNode__, LINKS.baseType$p1DC) == null) {
+      return "<rawType-undefined>";
+    }
+    return AIsTypeParamUtils.renderParametrizedType(AIiObject__BehaviorDescriptor.render_id5Ktnv9wJTN1.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.baseType$p1DC)), SLinkOperations.getChildren(__thisNode__, LINKS.typeArguments$p6NY));
   }
 
-  /*package*/ AIcTypeParam__BehaviorDescriptor() {
+  /*package*/ AIcGenericTypeDescriptor__BehaviorDescriptor() {
   }
 
   @Override
@@ -75,5 +82,10 @@ public final class AIcTypeParam__BehaviorDescriptor extends BaseBHDescriptor {
   @Override
   public SAbstractConcept getConcept() {
     return CONCEPT;
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink baseType$p1DC = MetaAdapterFactory.getContainmentLink(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1bfe4L, 0x53c7d5be0cb2b3ffL, "baseType");
+    /*package*/ static final SContainmentLink typeArguments$p6NY = MetaAdapterFactory.getContainmentLink(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1bfe4L, 0x53c7d5be0cb2b400L, "typeArguments");
   }
 }

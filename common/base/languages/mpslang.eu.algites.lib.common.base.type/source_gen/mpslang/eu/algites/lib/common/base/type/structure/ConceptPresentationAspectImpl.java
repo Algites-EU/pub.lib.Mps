@@ -9,59 +9,74 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_AIcConceptTypeRef;
-  private ConceptPresentation props_AIcParametrizedTypeRef;
-  private ConceptPresentation props_AIcPrimitiveTypeRef;
-  private ConceptPresentation props_AIcTypeParam;
-  private ConceptPresentation props_AIcTypeParamRef;
-  private ConceptPresentation props_AIcTypeRef;
+  private ConceptPresentation props_AIcConceptTypeDescriptor;
+  private ConceptPresentation props_AIcGenericTypeDescriptor;
+  private ConceptPresentation props_AIcJavaTypeDescriptor;
+  private ConceptPresentation props_AIcPrimitiveTypeDescriptor;
+  private ConceptPresentation props_AIcTypeDescriptor;
+  private ConceptPresentation props_AIcTypeParamDef;
+  private ConceptPresentation props_AIcTypeParamUsage;
+  private ConceptPresentation props_AIiTypeParamOwner;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.AIcConceptTypeRef:
-        if (props_AIcConceptTypeRef == null) {
+      case LanguageConceptSwitch.AIcConceptTypeDescriptor:
+        if (props_AIcConceptTypeDescriptor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByReference(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1ab35L, 0x53c7d5be0caf4cafL, "concept", "", "");
-          props_AIcConceptTypeRef = cpb.create();
+          props_AIcConceptTypeDescriptor = cpb.create();
         }
-        return props_AIcConceptTypeRef;
-      case LanguageConceptSwitch.AIcParametrizedTypeRef:
-        if (props_AIcParametrizedTypeRef == null) {
+        return props_AIcConceptTypeDescriptor;
+      case LanguageConceptSwitch.AIcGenericTypeDescriptor:
+        if (props_AIcGenericTypeDescriptor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("AIcParametrizedTypeRef");
-          props_AIcParametrizedTypeRef = cpb.create();
+          cpb.rawPresentation("AIcGenericTypeDescriptor");
+          props_AIcGenericTypeDescriptor = cpb.create();
         }
-        return props_AIcParametrizedTypeRef;
-      case LanguageConceptSwitch.AIcPrimitiveTypeRef:
-        if (props_AIcPrimitiveTypeRef == null) {
+        return props_AIcGenericTypeDescriptor;
+      case LanguageConceptSwitch.AIcJavaTypeDescriptor:
+        if (props_AIcJavaTypeDescriptor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("AIcPrimitiveTypeRef");
-          props_AIcPrimitiveTypeRef = cpb.create();
+          cpb.rawPresentation("AIcJavaTypeDescriptor");
+          props_AIcJavaTypeDescriptor = cpb.create();
         }
-        return props_AIcPrimitiveTypeRef;
-      case LanguageConceptSwitch.AIcTypeParam:
-        if (props_AIcTypeParam == null) {
+        return props_AIcJavaTypeDescriptor;
+      case LanguageConceptSwitch.AIcPrimitiveTypeDescriptor:
+        if (props_AIcPrimitiveTypeDescriptor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("AIcTypeParam");
-          props_AIcTypeParam = cpb.create();
+          cpb.rawPresentation("AIcPrimitiveTypeDescriptor");
+          props_AIcPrimitiveTypeDescriptor = cpb.create();
         }
-        return props_AIcTypeParam;
-      case LanguageConceptSwitch.AIcTypeParamRef:
-        if (props_AIcTypeParamRef == null) {
+        return props_AIcPrimitiveTypeDescriptor;
+      case LanguageConceptSwitch.AIcTypeDescriptor:
+        if (props_AIcTypeDescriptor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("AIcTypeParamRef");
-          props_AIcTypeParamRef = cpb.create();
+          props_AIcTypeDescriptor = cpb.create();
         }
-        return props_AIcTypeParamRef;
-      case LanguageConceptSwitch.AIcTypeRef:
-        if (props_AIcTypeRef == null) {
+        return props_AIcTypeDescriptor;
+      case LanguageConceptSwitch.AIcTypeParamDef:
+        if (props_AIcTypeParamDef == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_AIcTypeRef = cpb.create();
+          cpb.rawPresentation("AIcTypeParamDef");
+          props_AIcTypeParamDef = cpb.create();
         }
-        return props_AIcTypeRef;
+        return props_AIcTypeParamDef;
+      case LanguageConceptSwitch.AIcTypeParamUsage:
+        if (props_AIcTypeParamUsage == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1c4b3L, 0x7081d898a8f8bdfL, "typeParam", "", "");
+          props_AIcTypeParamUsage = cpb.create();
+        }
+        return props_AIcTypeParamUsage;
+      case LanguageConceptSwitch.AIiTypeParamOwner:
+        if (props_AIiTypeParamOwner == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AIiTypeParamOwner = cpb.create();
+        }
+        return props_AIiTypeParamOwner;
     }
     return null;
   }

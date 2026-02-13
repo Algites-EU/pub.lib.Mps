@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
+  <root nodeRef="r:d06a2a02-a431-4844-bec4-2eb7793b14c0(mpslang.eu.algites.lib.common.base.type.utils)/506687434651713729">
+    <file name="AIsTypeParamUtils.java">
+      <node id="506687434651714134" at="26,77,27,51" concept="4" />
+      <node id="506687434651720854" at="27,51,28,40" concept="4" />
+      <node id="506687434651733888" at="30,88,31,50" concept="4" />
+      <node id="506687434651734498" at="31,50,32,138" concept="1" />
+      <node id="506687434651723921" at="33,7,34,65" concept="1" />
+      <node id="506687434651776690" at="35,5,36,21" concept="5" />
+      <node id="506687434651778217" at="46,72,47,51" concept="4" />
+      <node id="506687434651798247" at="48,25,49,134" concept="1" />
+      <node id="506687434651778259" at="50,5,51,21" concept="5" />
+      <node id="506687434652511776" at="64,80,65,36" concept="5" />
+      <node id="506687434652511791" at="66,5,67,28" concept="4" />
+      <node id="506687434652511795" at="67,28,68,30" concept="4" />
+      <node id="506687434652711223" at="68,30,69,0" concept="6" />
+      <node id="506687434652511801" at="70,39,71,119" concept="4" />
+      <node id="506687434652511815" at="72,31,73,87" concept="1" />
+      <node id="506687434652511828" at="75,23,76,33" concept="1" />
+      <node id="506687434652511832" at="76,33,77,27" concept="1" />
+      <node id="506687434652511838" at="78,14,79,54" concept="1" />
+      <node id="506687434652511852" at="81,5,82,50" concept="5" />
+      <node id="506687434651713729" at="86,0,87,0" concept="7" trace="typeParams$Hgf2" />
+      <node id="506687434651713729" at="90,0,91,0" concept="7" trace="AIiTypeParamOwner$fM" />
+      <node id="506687434652511836" at="78,12,80,7" concept="0" />
+      <node id="506687434651789279" at="47,51,50,5" concept="3" />
+      <node id="506687434652511774" at="63,94,66,5" concept="3" />
+      <node id="506687434652511813" at="71,119,74,7" concept="3" />
+      <node id="506687434651728178" at="29,38,33,7" concept="3" />
+      <node id="506687434652511826" at="74,7,80,7" concept="3" />
+      <node id="506687434651721361" at="28,40,35,5" concept="9" />
+      <node id="506687434651778215" at="46,0,53,0" concept="8" trace="collectDeclaredTypeParamDefs#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
+      <node id="506687434651713800" at="26,0,38,0" concept="8" trace="collectVisibleTypeParamDefs#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
+      <node id="506687434652511799" at="69,0,81,5" concept="2" />
+      <node id="506687434652603517" at="63,0,84,0" concept="8" trace="renderParametrizedType#(Ljava/lang/String;Ljava/util/List;)Ljava/lang/String;" />
+      <scope id="506687434651789281" at="48,25,49,134" />
+      <scope id="506687434652511775" at="64,80,65,36" />
+      <scope id="506687434652511814" at="72,31,73,87" />
+      <scope id="506687434652511837" at="78,14,79,54" />
+      <scope id="506687434651728180" at="30,88,32,138">
+        <var name="locOwner" id="506687434651733891" />
+      </scope>
+      <scope id="506687434652511827" at="75,23,77,27" />
+      <scope id="506687434651721363" at="29,38,34,65" />
+      <scope id="506687434651778216" at="46,72,51,21">
+        <var name="locResult" id="506687434651778218" />
+      </scope>
+      <scope id="506687434651778215" at="46,0,53,0">
+        <var name="aOwner" id="506687434651778263" />
+      </scope>
+      <scope id="506687434651713803" at="26,77,36,21">
+        <var name="locCurrentNode" id="506687434651720857" />
+        <var name="locResult" id="506687434651714137" />
+      </scope>
+      <scope id="506687434652511800" at="70,39,80,7">
+        <var name="locArgText" id="506687434652511802" />
+      </scope>
+      <scope id="506687434651713800" at="26,0,38,0">
+        <var name="aContextNode" id="506687434651713830" />
+      </scope>
+      <scope id="506687434652511799" at="69,0,81,5">
+        <var name="locArg" id="506687434652511847" />
+      </scope>
+      <scope id="506687434652603520" at="63,94,82,50">
+        <var name="locArgsText" id="506687434652511792" />
+        <var name="locIsFirst" id="506687434652511796" />
+      </scope>
+      <scope id="506687434652603517" at="63,0,84,0">
+        <var name="aDescriptors" id="506687434652604051" />
+        <var name="aRawTypeText" id="506687434652603752" />
+      </scope>
+      <unit id="506687434651713729" at="85,0,88,0" name="mpslang.eu.algites.lib.common.base.type.utils.AIsTypeParamUtils$LINKS" />
+      <unit id="506687434651713729" at="89,0,92,0" name="mpslang.eu.algites.lib.common.base.type.utils.AIsTypeParamUtils$CONCEPTS" />
+      <unit id="506687434651713729" at="16,0,93,0" name="mpslang.eu.algites.lib.common.base.type.utils.AIsTypeParamUtils" />
+    </file>
+  </root>
+</debug-info>
+
