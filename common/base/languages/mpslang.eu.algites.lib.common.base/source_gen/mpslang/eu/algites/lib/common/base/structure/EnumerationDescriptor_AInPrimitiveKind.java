@@ -20,7 +20,7 @@ public class EnumerationDescriptor_AInPrimitiveKind extends EnumerationDescripto
   private final EnumerationDescriptor.MemberDescriptor myMember_BOOL_0 = new EnumerationDescriptor.MemberDescriptor("BOOL", "BOOL", 0x53c7d5be0cadd326L, "r:9cc8eb42-87d8-44ad-9360-c620e9171fe7(mpslang.eu.algites.lib.common.base.structure)/6037028837746660134");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x38741375005249b3L, 0x9ff14edcb48cb677L, 0x53c7d5be0cadd323L, 0x53c7d5be0cadd324L, 0x53c7d5be0cadd325L, 0x53c7d5be0cadd326L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_STRING_0, myMember_INT_0, myMember_BOOL_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_STRING_0, myMember_INT_0, myMember_BOOL_0);
 
   @Nullable
   @Override

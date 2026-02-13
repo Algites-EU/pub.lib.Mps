@@ -15,8 +15,8 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 
 public class AIsTypeParamUtils {
   /**
-   * Collects visible type parameters for the given context node by walking up 
-   * the ancestor chain and aggregating type parameters from all {@code ATiTypeParamOwner}ancestors.
+   * Collects visible type parameters for the given context node by walking up
+   * the ancestor chain and aggregating type parameters from all {@code ATiTypeParamOwner} ancestors.
    * 
    * The nearest owner contributes first, then outer owners.
    * 

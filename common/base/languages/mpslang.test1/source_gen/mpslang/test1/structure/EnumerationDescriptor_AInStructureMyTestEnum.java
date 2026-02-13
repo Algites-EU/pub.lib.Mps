@@ -20,7 +20,7 @@ public class EnumerationDescriptor_AInStructureMyTestEnum extends EnumerationDes
   private final EnumerationDescriptor.MemberDescriptor myMember_ITEM3_0 = new EnumerationDescriptor.MemberDescriptor("ITEM3", "ITEM3", 0x53c7d5be0cad1ba7L, "r:c94dbecc-0f90-4bfd-9d48-05f203442439(mpslang.test1.structure)/6037028837746613159");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x964c36cff8a84014L, 0x8c57c1bbe503ec59L, 0x53c7d5be0cad1ba4L, 0x53c7d5be0cad1ba5L, 0x53c7d5be0cad1ba6L, 0x53c7d5be0cad1ba7L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_ITEM1_0, myMember_ITEM2_0, myMember_ITEM3_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_ITEM1_0, myMember_ITEM2_0, myMember_ITEM3_0);
 
   @Nullable
   @Override

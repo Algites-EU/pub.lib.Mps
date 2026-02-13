@@ -10,72 +10,71 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="13,0,29,0" name="mpslang.eu.algites.lib.common.base.type.constraints.ConstraintsAspectDescriptor" />
+      <unit at="15,0,32,0" name="mpslang.eu.algites.lib.common.base.type.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:ffb122de-718f-4f43-9383-dc08c4acaf58(mpslang.eu.algites.lib.common.base.type.constraints)/506687434651593148">
     <file name="AIcTypeParamUsage_Constraints.java">
-      <node id="506687434651593148" at="28,42,29,41" concept="7" />
-      <node id="506687434651910283" at="40,63,41,153" concept="5" />
-      <node id="506687434652222013" at="44,80,45,61" concept="4" />
-      <node id="506687434652231170" at="46,41,47,59" concept="1" />
-      <node id="506687434651911673" at="48,13,49,102" concept="4" />
-      <node id="506687434652080140" at="53,37,54,28" concept="5" />
-      <node id="506687434652083410" at="55,17,56,48" concept="4" />
-      <node id="506687434652103093" at="57,91,58,28" concept="5" />
-      <node id="506687434652105853" at="59,17,60,91" concept="5" />
-      <node id="506687434651593148" at="66,6,67,131" concept="4" />
-      <node id="506687434651910283" at="67,131,68,42" concept="1" />
-      <node id="506687434651593148" at="68,42,69,22" concept="5" />
-      <node id="506687434651593148" at="73,0,74,0" concept="6" trace="AIcTypeParamUsage$5j" />
-      <node id="506687434651593148" at="77,0,78,0" concept="6" trace="typeParam$1Cc9" />
-      <node id="506687434651593148" at="81,0,82,0" concept="6" trace="identifier$4G1F" />
-      <node id="506687434651593148" at="28,0,31,0" concept="0" trace="AIcTypeParamUsage_Constraints#()V" />
-      <node id="506687434652226964" at="45,61,48,13" concept="2" />
-      <node id="506687434652073981" at="52,51,55,17" concept="2" />
-      <node id="506687434652089659" at="56,48,59,17" concept="2" />
-      <node id="506687434651910283" at="39,0,43,0" concept="3" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
-      <node id="506687434652069028" at="51,0,62,0" concept="3" trace="getName#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="506687434651912877" at="49,102,62,14" concept="5" />
-      <node id="506687434651910283" at="43,0,64,0" concept="3" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
-      <node id="506687434651910283" at="37,56,64,10" concept="5" />
-      <node id="506687434651910283" at="35,0,66,0" concept="3" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
-      <node id="506687434651910283" at="33,90,66,6" concept="4" />
-      <node id="506687434651593148" at="32,0,71,0" concept="3" trace="getSpecifiedReferences#()Ljava/util/Map;" />
-      <scope id="506687434651593148" at="28,42,29,41" />
-      <scope id="506687434651910283" at="40,63,41,153" />
-      <scope id="506687434652226966" at="46,41,47,59" />
-      <scope id="506687434652073983" at="53,37,54,28" />
-      <scope id="506687434652089661" at="57,91,58,28" />
-      <scope id="506687434651593148" at="28,0,31,0" />
-      <scope id="506687434651910283" at="39,0,43,0" />
-      <scope id="506687434652069035" at="52,51,60,91">
+      <node id="506687434651593148" at="27,91,28,54" concept="7" />
+      <node id="506687434651910283" at="28,54,29,26" concept="1" />
+      <node id="506687434651910283" at="33,54,34,58" concept="7" />
+      <node id="506687434651910283" at="41,61,42,151" concept="5" />
+      <node id="506687434652222013" at="45,78,46,59" concept="4" />
+      <node id="506687434652231170" at="47,39,48,57" concept="1" />
+      <node id="506687434651911673" at="49,11,50,100" concept="4" />
+      <node id="506687434652080140" at="54,35,55,26" concept="5" />
+      <node id="506687434652083410" at="56,15,57,46" concept="4" />
+      <node id="506687434652103093" at="58,89,59,26" concept="5" />
+      <node id="506687434652105853" at="60,15,61,89" concept="5" />
+      <node id="506687434651593148" at="70,0,71,0" concept="6" trace="AIcTypeParamUsage$5j" />
+      <node id="506687434651593148" at="74,0,75,0" concept="6" trace="typeParam$1Cc9" />
+      <node id="506687434651593148" at="78,0,79,0" concept="6" trace="identifier$4G1F" />
+      <node id="506687434651910283" at="33,0,36,0" concept="0" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="506687434652226964" at="46,59,49,11" concept="2" />
+      <node id="506687434652073981" at="53,49,56,15" concept="2" />
+      <node id="506687434652089659" at="57,46,60,15" concept="2" />
+      <node id="506687434651593148" at="27,0,31,0" concept="0" trace="AIcTypeParamUsage_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="506687434651910283" at="40,0,44,0" concept="3" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="506687434652069028" at="52,0,63,0" concept="3" trace="getName#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="506687434651912877" at="50,100,63,12" concept="5" />
+      <node id="506687434651910283" at="44,0,65,0" concept="3" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="506687434651910283" at="38,54,65,8" concept="5" />
+      <node id="506687434651910283" at="36,0,67,0" concept="3" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <scope id="506687434651910283" at="33,54,34,58" />
+      <scope id="506687434651910283" at="41,61,42,151" />
+      <scope id="506687434652226966" at="47,39,48,57" />
+      <scope id="506687434652073983" at="54,35,55,26" />
+      <scope id="506687434652089661" at="58,89,59,26" />
+      <scope id="506687434651593148" at="27,91,29,26" />
+      <scope id="506687434651910283" at="33,0,36,0">
+        <var name="container" id="506687434651910283" />
+      </scope>
+      <scope id="506687434651593148" at="27,0,31,0">
+        <var name="initContext" id="506687434651593148" />
+      </scope>
+      <scope id="506687434651910283" at="40,0,44,0" />
+      <scope id="506687434652069035" at="53,49,61,89">
         <var name="locDef" id="506687434652083413" />
       </scope>
-      <scope id="506687434652069028" at="51,0,62,0">
+      <scope id="506687434652069028" at="52,0,63,0">
         <var name="aChild" id="506687434652069032" />
       </scope>
-      <scope id="506687434651910283" at="44,80,62,14">
+      <scope id="506687434651910283" at="45,78,63,12">
         <var name="locCandidates" id="506687434651911676" />
         <var name="locContextNode" id="506687434652222016" />
       </scope>
-      <scope id="506687434651910283" at="43,0,64,0">
+      <scope id="506687434651910283" at="44,0,65,0">
         <var name="_context" id="506687434651910283" />
       </scope>
-      <scope id="506687434651910283" at="37,56,64,10" />
-      <scope id="506687434651910283" at="35,0,66,0" />
-      <scope id="506687434651593148" at="33,90,69,22">
-        <var name="d0" id="506687434651910283" />
-        <var name="references" id="506687434651593148" />
-      </scope>
-      <scope id="506687434651593148" at="32,0,71,0" />
-      <unit id="506687434651593148" at="72,0,75,0" name="mpslang.eu.algites.lib.common.base.type.constraints.AIcTypeParamUsage_Constraints$CONCEPTS" />
-      <unit id="506687434651593148" at="76,0,79,0" name="mpslang.eu.algites.lib.common.base.type.constraints.AIcTypeParamUsage_Constraints$LINKS" />
-      <unit id="506687434651593148" at="80,0,83,0" name="mpslang.eu.algites.lib.common.base.type.constraints.AIcTypeParamUsage_Constraints$PROPS" />
-      <unit id="506687434652067176" at="50,23,62,13" name="mpslang.eu.algites.lib.common.base.type.constraints.AIcTypeParamUsage_Constraints$1$1$1" />
-      <unit id="506687434651910283" at="38,19,64,9" name="mpslang.eu.algites.lib.common.base.type.constraints.AIcTypeParamUsage_Constraints$1$1" />
-      <unit id="506687434651910283" at="34,48,66,5" name="mpslang.eu.algites.lib.common.base.type.constraints.AIcTypeParamUsage_Constraints$1" />
-      <unit id="506687434651593148" at="27,0,84,0" name="mpslang.eu.algites.lib.common.base.type.constraints.AIcTypeParamUsage_Constraints" />
+      <scope id="506687434651910283" at="38,54,65,8" />
+      <scope id="506687434651910283" at="36,0,67,0" />
+      <unit id="506687434651593148" at="69,0,72,0" name="mpslang.eu.algites.lib.common.base.type.constraints.AIcTypeParamUsage_Constraints$CONCEPTS" />
+      <unit id="506687434651593148" at="73,0,76,0" name="mpslang.eu.algites.lib.common.base.type.constraints.AIcTypeParamUsage_Constraints$LINKS" />
+      <unit id="506687434651593148" at="77,0,80,0" name="mpslang.eu.algites.lib.common.base.type.constraints.AIcTypeParamUsage_Constraints$PROPS" />
+      <unit id="506687434652067176" at="51,21,63,11" name="mpslang.eu.algites.lib.common.base.type.constraints.AIcTypeParamUsage_Constraints$RD1$1$1" />
+      <unit id="506687434651910283" at="39,17,65,7" name="mpslang.eu.algites.lib.common.base.type.constraints.AIcTypeParamUsage_Constraints$RD1$1" />
+      <unit id="506687434651910283" at="32,0,68,0" name="mpslang.eu.algites.lib.common.base.type.constraints.AIcTypeParamUsage_Constraints$RD1" />
+      <unit id="506687434651593148" at="26,0,81,0" name="mpslang.eu.algites.lib.common.base.type.constraints.AIcTypeParamUsage_Constraints" />
     </file>
   </root>
 </debug-info>
