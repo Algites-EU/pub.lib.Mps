@@ -6,6 +6,7 @@
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
+    <import index="a435" ref="r:d06a2a02-a431-4844-bec4-2eb7793b14c0(mpslang.eu.algites.lib.common.base.type.utils)" />
     <import index="ydau" ref="r:7c5fb68d-7de0-4133-951b-35b2986b94da(mpslang.eu.algites.lib.common.base.type.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -553,6 +554,23 @@
     <node concept="1YaCAy" id="s87oAaE3EC" role="1YuTPh">
       <property role="TrG5h" value="aJavaTypeDescriptor" />
       <ref role="1YaFvo" to="ydau:s87oAaBsHC" resolve="AIcJavaTypeDescriptor" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6IhYsI86FPK">
+    <property role="TrG5h" value="check_AIcUnresolvedTypeDescriptor" />
+    <node concept="3clFbS" id="6IhYsI86FPL" role="18ibNy">
+      <node concept="2MkqsV" id="6IhYsI86FTy" role="3cqZAp">
+        <node concept="Xl_RD" id="6IhYsI86FTF" role="2MkJ7o">
+          <property role="Xl_RC" value="Unresolved type '?' must be always replaced by specific type" />
+        </node>
+        <node concept="1YBJjd" id="6IhYsI86FUX" role="1urrMF">
+          <ref role="1YBMHb" node="6IhYsI86FPN" resolve="aUnresolvedTypeDescriptor" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6IhYsI86FPN" role="1YuTPh">
+      <property role="TrG5h" value="aUnresolvedTypeDescriptor" />
+      <ref role="1YaFvo" to="ydau:6IhYsI84K2R" resolve="AIcUnresolvedTypeDescriptor" />
     </node>
   </node>
 </model>

@@ -12,10 +12,16 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_AIcConceptTypeDescriptor;
   private ConceptPresentation props_AIcGenericTypeDescriptor;
   private ConceptPresentation props_AIcJavaTypeDescriptor;
+  private ConceptPresentation props_AIcMethodDef;
+  private ConceptPresentation props_AIcMethodParamDef;
   private ConceptPresentation props_AIcPrimitiveTypeDescriptor;
+  private ConceptPresentation props_AIcTypeDeclaration;
+  private ConceptPresentation props_AIcTypeDeclarationRefDescriptor;
   private ConceptPresentation props_AIcTypeDescriptor;
   private ConceptPresentation props_AIcTypeParamDef;
   private ConceptPresentation props_AIcTypeParamUsage;
+  private ConceptPresentation props_AIcUnresolvedTypeDescriptor;
+  private ConceptPresentation props_AIiMethodOwner;
   private ConceptPresentation props_AIiTypeParamOwner;
 
   @Override
@@ -44,6 +50,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_AIcJavaTypeDescriptor = cpb.create();
         }
         return props_AIcJavaTypeDescriptor;
+      case LanguageConceptSwitch.AIcMethodDef:
+        if (props_AIcMethodDef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("AIcMethodDef");
+          props_AIcMethodDef = cpb.create();
+        }
+        return props_AIcMethodDef;
+      case LanguageConceptSwitch.AIcMethodParamDef:
+        if (props_AIcMethodParamDef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("AIcMethodParamDef");
+          props_AIcMethodParamDef = cpb.create();
+        }
+        return props_AIcMethodParamDef;
       case LanguageConceptSwitch.AIcPrimitiveTypeDescriptor:
         if (props_AIcPrimitiveTypeDescriptor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -51,6 +71,19 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_AIcPrimitiveTypeDescriptor = cpb.create();
         }
         return props_AIcPrimitiveTypeDescriptor;
+      case LanguageConceptSwitch.AIcTypeDeclaration:
+        if (props_AIcTypeDeclaration == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AIcTypeDeclaration = cpb.create();
+        }
+        return props_AIcTypeDeclaration;
+      case LanguageConceptSwitch.AIcTypeDeclarationRefDescriptor:
+        if (props_AIcTypeDeclarationRefDescriptor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x695f40ab5b36e881L, 0x695f40ab5b36e8c1L, "typeDeclaration", "", "");
+          props_AIcTypeDeclarationRefDescriptor = cpb.create();
+        }
+        return props_AIcTypeDeclarationRefDescriptor;
       case LanguageConceptSwitch.AIcTypeDescriptor:
         if (props_AIcTypeDescriptor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -71,6 +104,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_AIcTypeParamUsage = cpb.create();
         }
         return props_AIcTypeParamUsage;
+      case LanguageConceptSwitch.AIcUnresolvedTypeDescriptor:
+        if (props_AIcUnresolvedTypeDescriptor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("unresolved type descriptor - temporary placeholder");
+          cpb.rawPresentation("AIcUnresolvedTypeDescriptor");
+          props_AIcUnresolvedTypeDescriptor = cpb.create();
+        }
+        return props_AIcUnresolvedTypeDescriptor;
+      case LanguageConceptSwitch.AIiMethodOwner:
+        if (props_AIiMethodOwner == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AIiMethodOwner = cpb.create();
+        }
+        return props_AIiMethodOwner;
       case LanguageConceptSwitch.AIiTypeParamOwner:
         if (props_AIiTypeParamOwner == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

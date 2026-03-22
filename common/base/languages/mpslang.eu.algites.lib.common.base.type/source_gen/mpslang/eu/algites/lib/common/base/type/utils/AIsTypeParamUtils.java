@@ -9,9 +9,12 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import mpslang.eu.algites.lib.common.base.behavior.AIiObject__BehaviorDescriptor;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.openapi.editor.EditorContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
+import org.jetbrains.mps.openapi.language.SConcept;
 
 public class AIsTypeParamUtils {
   /**
@@ -82,11 +85,82 @@ public class AIsTypeParamUtils {
     return aRawTypeText + "<" + locArgsText + ">";
   }
 
+
+  /**
+   * Performs the wrapping of the passed type descriptor into the generic type as a base type
+   * 
+   * 
+   * @param aTypeToWrap concept of the type which should be wrapped as a base type into the new generic type,
+   *                    which will automatically replace this passed concept on all places
+   *                    
+   * @param aEditorContext editor context in which the replacement happens
+   */
+  public static void editorWrapIntoGeneric(SNode aTypeToWrap, EditorContext aEditorContext) {
+    /*
+      Wrap the current type descriptor into AIcGenericTypeDescriptor when user presses '<'.
+
+    */
+
+    SNode locCurrentDescriptor = aTypeToWrap;
+    SNode locParentNode = SNodeOperations.getParent(locCurrentDescriptor);
+    /*
+      If we are already editing the baseType of an existing generic descriptor, do not nest generics.
+      Just ensure there is at least one type argument and move the caret there.
+
+    */
+
+    if (locParentNode != null && SNodeOperations.isInstanceOf(locParentNode, CONCEPTS.AIcGenericTypeDescriptor$mM)) {
+      SNode locExistingGeneric = ((SNode) locParentNode);
+
+      if (locCurrentDescriptor == SLinkOperations.getTarget(locExistingGeneric, LINKS.baseType$p1DC)) {
+        if (ListSequence.fromList(SLinkOperations.getChildren(locExistingGeneric, LINKS.typeArguments$p6NY)).isEmpty()) {
+          SNode locNewDescriptor = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x6b91f9cb881300b7L, "mpslang.eu.algites.lib.common.base.type.structure.AIcUnresolvedTypeDescriptor"));
+          ListSequence.fromList(SLinkOperations.getChildren(locExistingGeneric, LINKS.typeArguments$p6NY)).addElement(locNewDescriptor);
+        }
+        return;
+      }
+
+    }
+    SNode locNewGeneric = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1bfe4L, "mpslang.eu.algites.lib.common.base.type.structure.AIcGenericTypeDescriptor"));
+    /*
+      Replace current node in the AST with the new generic wrapper:
+
+    */
+
+    SNodeOperations.replaceWithAnother(locCurrentDescriptor, locNewGeneric);
+
+    /*
+      Move the former node under baseType of the wrapper:
+
+    */
+
+    SLinkOperations.setTarget(locNewGeneric, LINKS.baseType$p1DC, locCurrentDescriptor);
+    /*
+      Create the first undefined generic element:
+
+    */
+
+    SNode locNewDescriptor = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x6b91f9cb881300b7L, "mpslang.eu.algites.lib.common.base.type.structure.AIcUnresolvedTypeDescriptor"));
+    ListSequence.fromList(SLinkOperations.getChildren(locNewGeneric, LINKS.typeArguments$p6NY)).addElement(locNewDescriptor);
+    /*
+      Focus the new argument to perform the replacement:
+
+    */
+
+    if (aEditorContext != null) {
+      aEditorContext.select(locNewDescriptor);
+    }
+    return;
+  }
+
   private static final class LINKS {
     /*package*/ static final SContainmentLink typeParams$Hgf2 = MetaAdapterFactory.getContainmentLink(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x7081d898a9047a8L, 0x7081d898a91bf78L, "typeParams");
+    /*package*/ static final SContainmentLink baseType$p1DC = MetaAdapterFactory.getContainmentLink(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1bfe4L, 0x53c7d5be0cb2b3ffL, "baseType");
+    /*package*/ static final SContainmentLink typeArguments$p6NY = MetaAdapterFactory.getContainmentLink(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1bfe4L, 0x53c7d5be0cb2b400L, "typeArguments");
   }
 
   private static final class CONCEPTS {
     /*package*/ static final SInterfaceConcept AIiTypeParamOwner$fM = MetaAdapterFactory.getInterfaceConcept(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x7081d898a9047a8L, "mpslang.eu.algites.lib.common.base.type.structure.AIiTypeParamOwner");
+    /*package*/ static final SConcept AIcGenericTypeDescriptor$mM = MetaAdapterFactory.getConcept(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1bfe4L, "mpslang.eu.algites.lib.common.base.type.structure.AIcGenericTypeDescriptor");
   }
 }

@@ -10,6 +10,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
 import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
+import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
+import mpslang.eu.algites.lib.common.base.type.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor;
 import mpslang.eu.algites.lib.common.base.type.typesystem.TypesystemDescriptor;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
@@ -51,6 +53,9 @@ public class Language extends LanguageRuntime {
     }
     if (aspectClass == ConstraintsAspectDescriptor.class) {
       return aspectClass.cast(new mpslang.eu.algites.lib.common.base.type.constraints.ConstraintsAspectDescriptor());
+    }
+    if (aspectClass == EditorAspectDescriptor.class) {
+      return aspectClass.cast(new EditorAspectDescriptorImpl());
     }
     if (aspectClass == IHelginsDescriptor.class) {
       return aspectClass.cast(new TypesystemDescriptor());

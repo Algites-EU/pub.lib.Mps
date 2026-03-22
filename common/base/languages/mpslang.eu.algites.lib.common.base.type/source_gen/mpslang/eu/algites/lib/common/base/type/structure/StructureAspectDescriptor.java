@@ -17,10 +17,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAIcConceptTypeDescriptor = createDescriptorForAIcConceptTypeDescriptor();
   /*package*/ final ConceptDescriptor myConceptAIcGenericTypeDescriptor = createDescriptorForAIcGenericTypeDescriptor();
   /*package*/ final ConceptDescriptor myConceptAIcJavaTypeDescriptor = createDescriptorForAIcJavaTypeDescriptor();
+  /*package*/ final ConceptDescriptor myConceptAIcMethodDef = createDescriptorForAIcMethodDef();
+  /*package*/ final ConceptDescriptor myConceptAIcMethodParamDef = createDescriptorForAIcMethodParamDef();
   /*package*/ final ConceptDescriptor myConceptAIcPrimitiveTypeDescriptor = createDescriptorForAIcPrimitiveTypeDescriptor();
+  /*package*/ final ConceptDescriptor myConceptAIcTypeDeclaration = createDescriptorForAIcTypeDeclaration();
+  /*package*/ final ConceptDescriptor myConceptAIcTypeDeclarationRefDescriptor = createDescriptorForAIcTypeDeclarationRefDescriptor();
   /*package*/ final ConceptDescriptor myConceptAIcTypeDescriptor = createDescriptorForAIcTypeDescriptor();
   /*package*/ final ConceptDescriptor myConceptAIcTypeParamDef = createDescriptorForAIcTypeParamDef();
   /*package*/ final ConceptDescriptor myConceptAIcTypeParamUsage = createDescriptorForAIcTypeParamUsage();
+  /*package*/ final ConceptDescriptor myConceptAIcUnresolvedTypeDescriptor = createDescriptorForAIcUnresolvedTypeDescriptor();
+  /*package*/ final ConceptDescriptor myConceptAIiMethodOwner = createDescriptorForAIiMethodOwner();
   /*package*/ final ConceptDescriptor myConceptAIiTypeParamOwner = createDescriptorForAIiTypeParamOwner();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -37,7 +43,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAIcConceptTypeDescriptor, myConceptAIcGenericTypeDescriptor, myConceptAIcJavaTypeDescriptor, myConceptAIcPrimitiveTypeDescriptor, myConceptAIcTypeDescriptor, myConceptAIcTypeParamDef, myConceptAIcTypeParamUsage, myConceptAIiTypeParamOwner);
+    return Arrays.asList(myConceptAIcConceptTypeDescriptor, myConceptAIcGenericTypeDescriptor, myConceptAIcJavaTypeDescriptor, myConceptAIcMethodDef, myConceptAIcMethodParamDef, myConceptAIcPrimitiveTypeDescriptor, myConceptAIcTypeDeclaration, myConceptAIcTypeDeclarationRefDescriptor, myConceptAIcTypeDescriptor, myConceptAIcTypeParamDef, myConceptAIcTypeParamUsage, myConceptAIcUnresolvedTypeDescriptor, myConceptAIiMethodOwner, myConceptAIiTypeParamOwner);
   }
 
   @Override
@@ -50,14 +56,26 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptAIcGenericTypeDescriptor;
       case LanguageConceptSwitch.AIcJavaTypeDescriptor:
         return myConceptAIcJavaTypeDescriptor;
+      case LanguageConceptSwitch.AIcMethodDef:
+        return myConceptAIcMethodDef;
+      case LanguageConceptSwitch.AIcMethodParamDef:
+        return myConceptAIcMethodParamDef;
       case LanguageConceptSwitch.AIcPrimitiveTypeDescriptor:
         return myConceptAIcPrimitiveTypeDescriptor;
+      case LanguageConceptSwitch.AIcTypeDeclaration:
+        return myConceptAIcTypeDeclaration;
+      case LanguageConceptSwitch.AIcTypeDeclarationRefDescriptor:
+        return myConceptAIcTypeDeclarationRefDescriptor;
       case LanguageConceptSwitch.AIcTypeDescriptor:
         return myConceptAIcTypeDescriptor;
       case LanguageConceptSwitch.AIcTypeParamDef:
         return myConceptAIcTypeParamDef;
       case LanguageConceptSwitch.AIcTypeParamUsage:
         return myConceptAIcTypeParamUsage;
+      case LanguageConceptSwitch.AIcUnresolvedTypeDescriptor:
+        return myConceptAIcUnresolvedTypeDescriptor;
+      case LanguageConceptSwitch.AIiMethodOwner:
+        return myConceptAIiMethodOwner;
       case LanguageConceptSwitch.AIiTypeParamOwner:
         return myConceptAIiTypeParamOwner;
       default:
@@ -101,6 +119,25 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("qualifiedJavaTypeName", 0x7081d898a9dcb69L).type(PrimitiveTypeId.STRING).origin("506687434652502889").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForAIcMethodDef() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("mpslang.eu.algites.lib.common.base.type", "AIcMethodDef", 0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x14e85477227890a4L);
+    b.class_(false, false, false);
+    b.origin("r:7c5fb68d-7de0-4133-951b-35b2986b94da(mpslang.eu.algites.lib.common.base.type.structure)/1506546946011599012");
+    b.version(3);
+    b.property("methodName", 0x14e85477227890a5L).type(PrimitiveTypeId.STRING).origin("1506546946011599013").done();
+    b.aggregate("returnType", 0x14e85477227890a6L).target(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1a984L).optional(true).ordered(true).multiple(false).origin("1506546946011599014").done();
+    b.aggregate("methodParameters", 0x14e85477227890a7L).target(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x14e85477227890a8L).optional(true).ordered(true).multiple(true).origin("1506546946011599015").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForAIcMethodParamDef() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("mpslang.eu.algites.lib.common.base.type", "AIcMethodParamDef", 0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x14e85477227890a8L);
+    b.class_(false, false, false);
+    b.origin("r:7c5fb68d-7de0-4133-951b-35b2986b94da(mpslang.eu.algites.lib.common.base.type.structure)/1506546946011599016");
+    b.version(3);
+    b.property("paramName", 0x14e85477227890a9L).type(PrimitiveTypeId.STRING).origin("1506546946011599017").done();
+    b.aggregate("type", 0x14e85477227890aaL).target(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1a984L).optional(false).ordered(true).multiple(false).origin("1506546946011599018").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForAIcPrimitiveTypeDescriptor() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("mpslang.eu.algites.lib.common.base.type", "AIcPrimitiveTypeDescriptor", 0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1a987L);
     b.class_(false, false, false);
@@ -109,6 +146,26 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:7c5fb68d-7de0-4133-951b-35b2986b94da(mpslang.eu.algites.lib.common.base.type.structure)/6637564721400752519");
     b.version(3);
     b.property("kind", 0x5c1d5df260c215ddL).type(MetaIdFactory.dataTypeId(0x38741375005249b3L, 0x9ff14edcb48cb677L, 0x53c7d5be0cadd323L)).origin("6637564721400780253").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForAIcTypeDeclaration() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("mpslang.eu.algites.lib.common.base.type", "AIcTypeDeclaration", 0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x14e85477227abbaaL);
+    b.class_(false, true, false);
+    b.parent(0x38741375005249b3L, 0x9ff14edcb48cb677L, 0x5c1d5df260bf9cadL);
+    b.parent(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x7081d898a9047a8L);
+    b.parent(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x14e85477227890b5L);
+    b.origin("r:7c5fb68d-7de0-4133-951b-35b2986b94da(mpslang.eu.algites.lib.common.base.type.structure)/1506546946011741098");
+    b.version(3);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForAIcTypeDeclarationRefDescriptor() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("mpslang.eu.algites.lib.common.base.type", "AIcTypeDeclarationRefDescriptor", 0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x695f40ab5b36e881L);
+    b.class_(false, false, false);
+    // extends: mpslang.eu.algites.lib.common.base.type.structure.AIcTypeDescriptor
+    b.super_(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1a984L);
+    b.origin("r:7c5fb68d-7de0-4133-951b-35b2986b94da(mpslang.eu.algites.lib.common.base.type.structure)/7592858601483856001");
+    b.version(3);
+    b.associate("typeDeclaration", 0x695f40ab5b36e8c1L).target(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x14e85477227abbaaL).optional(false).origin("7592858601483856065").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForAIcTypeDescriptor() {
@@ -137,6 +194,23 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:7c5fb68d-7de0-4133-951b-35b2986b94da(mpslang.eu.algites.lib.common.base.type.structure)/6637564721400759475");
     b.version(3);
     b.associate("typeParam", 0x7081d898a8f8bdfL).target(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1c190L).optional(false).origin("506687434651569119").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForAIcUnresolvedTypeDescriptor() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("mpslang.eu.algites.lib.common.base.type", "AIcUnresolvedTypeDescriptor", 0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x6b91f9cb881300b7L);
+    b.class_(false, false, false);
+    // extends: mpslang.eu.algites.lib.common.base.type.structure.AIcTypeDescriptor
+    b.super_(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x5c1d5df260c1a984L);
+    b.origin("r:7c5fb68d-7de0-4133-951b-35b2986b94da(mpslang.eu.algites.lib.common.base.type.structure)/7751251086237958327");
+    b.version(3);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForAIiMethodOwner() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("mpslang.eu.algites.lib.common.base.type", "AIiMethodOwner", 0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x14e85477227890b5L);
+    b.interface_();
+    b.origin("r:7c5fb68d-7de0-4133-951b-35b2986b94da(mpslang.eu.algites.lib.common.base.type.structure)/1506546946011599029");
+    b.version(3);
+    b.aggregate("methods", 0x14e85477227890b6L).target(0x70f453cd5d6c40a7L, 0xba138d10610c56bcL, 0x14e85477227890a4L).optional(true).ordered(true).multiple(true).origin("1506546946011599030").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForAIiTypeParamOwner() {
