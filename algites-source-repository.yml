@@ -1,0 +1,12 @@
+sourceRepository:
+  id: pub.lib.Mps
+  name: Algites public MPS libraries repository
+  containedArtifactSetProjectRelativePaths:
+    - common/base
+
+versionContext:
+  releaseLine: "1"
+  revision: 0
+  qualifierKind: SNAPSHOT
+  qualifierLabel: SNAPSHOT
+  
