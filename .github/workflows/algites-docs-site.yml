@@ -1,0 +1,26 @@
+name: Publish MPS documentation
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: mps-docs-pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  publish-docs:
+    uses: Algites-EU/pub.gov.Algites/.github/workflows/algites-docs-site.yml@main
+    with:
+      gradle-task: generateDummyMpsDocs
+      docs-site-path: docs-site
+      java-version: "21"
+      gradle-arguments: "--warning-mode all"
+      publish-pages: true
