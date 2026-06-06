@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -19,8 +19,10 @@ jobs:
   publish-docs:
     uses: Algites-EU/pub.gov.Algites/.github/workflows/algites-universal-docs-site-pub.yml@main
     with:
-      gradle-task: generateDummyMpsDocs
-      docs-site-path: docs-site
+      gradle-task: generateAlgitesDocsSite
       java-version: "21"
+      publication-kind: preview
+      publication-id: ${{ github.ref_name }}
+      pages-branch: gh-pages
       gradle-arguments: "--warning-mode all"
       publish-pages: true
