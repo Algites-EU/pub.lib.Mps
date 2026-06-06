@@ -1,4 +1,4 @@
-name: Publish MPS documentation
+name: Publish Preview documentation
 
 on:
   push:
@@ -12,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: mps-docs-pages-${{ github.ref }}
+  group: docs-pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
