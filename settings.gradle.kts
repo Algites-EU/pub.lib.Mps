@@ -1,15 +1,14 @@
-val locIsCi: Boolean =
+fun isCiBuild(): Boolean =
     providers.gradleProperty("CI")
         .orElse(providers.environmentVariable("CI"))
         .map { it.equals("true", ignoreCase = true) }
         .orElse(false)
         .get()
 
-
 pluginManagement {
     repositories {
         gradlePluginPortal()
-        if (!locIsCi) {
+        if (!isCiBuild()) {
             mavenLocal()
         }
         mavenCentral()
@@ -33,7 +32,7 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        if (!locIsCi) {
+        if (!isCiBuild()) {
             mavenLocal()
         }
         mavenCentral()
