@@ -8,7 +8,7 @@
 
 .gradle/
 build/
-docs-site/generated/
+docs-site/
 
 .idea/
 *.iml
