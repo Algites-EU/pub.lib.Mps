@@ -2,6 +2,8 @@ sourceRepository:
   id: pub.lib.Mps
   name: Algites public MPS libraries repository
 
+groupId: eu.algites.lib.mps
+
 versionContext:
   releaseLine: "1"
   revision: 0
