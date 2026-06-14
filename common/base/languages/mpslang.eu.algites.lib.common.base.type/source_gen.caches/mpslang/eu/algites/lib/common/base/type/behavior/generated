@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="5ppg977l69zdnoktk677um8pu0xvp5g">
-  <files names="AIcConceptTypeDescriptor__BehaviorDescriptor.java:AIcGenericTypeDescriptor__BehaviorDescriptor.java:AIcJavaTypeDescriptor__BehaviorDescriptor.java:AIcPrimitiveTypeDescriptor__BehaviorDescriptor.java:AIcTypeDeclarationRefDescriptor__BehaviorDescriptor.java:AIcTypeParamDef__BehaviorDescriptor.java:AIcTypeParamUsage__BehaviorDescriptor.java:AIcUnresolvedTypeDescriptor__BehaviorDescriptor.java:BehaviorAspectDescriptor.java" />
-</product>
-

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="721ewy4jst5ukkqx4wuu3n3xl9occuy">
-  <files names="TypesystemDescriptor.java:check_AIcConceptTypeRef_NonTypesystemRule.java:check_AIcJavaTypeDescriptor_NonTypesystemRule.java:check_AIcParametrizedTypeRef_NonTypesystemRule.java:check_AIcPrimitiveTypeRef_NonTypesystemRule.java:check_AIcTypeParamDef_NonTypesystemRule.java:check_AIcTypeParamUsage_NonTypesystemRule.java:check_AIcUnresolvedTypeDescriptor_NonTypesystemRule.java" />
-</product>
-
