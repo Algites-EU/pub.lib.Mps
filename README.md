@@ -11,7 +11,7 @@ Commonly used MPS libraries/artifacts
 This repository contains the definition of the Meta Programming System libraries, used generally in all Algites projects as a part 
 of the Algites MPS development ecosystem.
 
-Currently used MPS version for the sources stored here expected is: 2025.1.2
+Currently used MPS version for the sources stored here expected is individual for any MPS project, but generally currently working with version: 2025.3
 
 ---
 
@@ -19,6 +19,7 @@ Currently used MPS version for the sources stored here expected is: 2025.1.2
 
 In this project are contained following MPS libraries:
 - common.base
+- core.tools.documentation
 
 Briefly describe the structure, for example:
 

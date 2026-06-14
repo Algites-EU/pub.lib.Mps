@@ -1,0 +1,14 @@
+
+groupId: eu.algites.lib.mps.core
+
+artifactSet:
+  type: mps
+
+  name: Core documentation tools working only with pure core MPS
+
+  description: >
+    Tools for documentation used for the processing of the general MPS AST 
+    without any dependencies on other Agites MPS libraries 
+    containing other common languages and solutions developed by Algites.
+    
+    

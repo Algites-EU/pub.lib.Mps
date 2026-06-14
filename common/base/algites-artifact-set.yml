@@ -1,0 +1,13 @@
+
+groupId: eu.algites.lib.mps.common
+
+artifactSet:
+  type: mps
+
+  name: Common Base Language and its base extensions
+
+  description: >
+    Shared language abstractions and type system support
+    used by Algites MPS libraries.
+    
+    
