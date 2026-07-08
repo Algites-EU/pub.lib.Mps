@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="index.html">
+      <unit at="1,0,50,7" name="eu.algites.lib.common.base.type.mpslang.structure.index" />
+    </file>
+    <file name="index_structure.html">
+      <unit at="1,0,160,7" name="eu.algites.lib.common.base.type.mpslang.structure.index_structure" />
+    </file>
+  </root>
+  <root nodeRef="r:7c5fb68d-7de0-4133-951b-35b2986b94da(eu.algites.lib.common.base.type.mpslang.structure)/1506546946011599012">
+    <file name="1506546946011599012_AConcept.html">
+      <unit id="1506546946011599012" at="1,0,114,7" name="eu.algites.lib.common.base.type.mpslang.structure.1506546946011599012_AConcept" />
+    </file>
+  </root>
+  <root nodeRef="r:7c5fb68d-7de0-4133-951b-35b2986b94da(eu.algites.lib.common.base.type.mpslang.structure)/1506546946011599016">
+    <file name="1506546946011599016_AConcept.html">
+      <unit id="1506546946011599016" at="1,0,106,7" name="eu.algites.lib.common.base.type.mpslang.structure.1506546946011599016_AConcept" />
+    </file>
+  </root>
+  <root nodeRef="r:7c5fb68d-7de0-4133-951b-35b2986b94da(eu.algites.lib.common.base.type.mpslang.structure)/1506546946011599029">
+    <file name="1506546946011599029_AConcept.html">
+      <unit id="1506546946011599029" at="1,0,97,7" name="eu.algites.lib.common.base.type.mpslang.structure.1506546946011599029_AConcept" />
+    </file>
+  </root>
+  <root nodeRef="r:7c5fb68d-7de0-4133-951b-35b2986b94da(eu.algites.lib.common.base.type.mpslang.structure)/1506546946011741098">
+    <file name="1506546946011741098_AConcept.html">
+      <unit id="1506546946011741098" at="1,0,91,7" name="eu.algites.lib.common.base.type.mpslang.structure.1506546946011741098_AConcept" />
+    </file>
+  </root>
+  <root nodeRef="r:7c5fb68d-7de0-4133-951b-35b2986b94da(eu.algites.lib.common.base.type.mpslang.structure)/506687434651617192">
+    <file name="506687434651617192_AConcept.html">
+      <unit id="506687434651617192" at="1,0,98,7" name="eu.algites.lib.common.base.type.mpslang.structure.506687434651617192_AConcept" />
+    </file>
+  </root>
+  <root nodeRef="r:7c5fb68d-7de0-4133-951b-35b2986b94da(eu.algites.lib.common.base.type.mpslang.structure)/506687434652502888">
+    <file name="506687434652502888_AConcept.html">
+      <unit id="506687434652502888" at="1,0,98,7" name="eu.algites.lib.common.base.type.mpslang.structure.506687434652502888_AConcept" />
+    </file>
+  </root>
+  <root nodeRef="r:7c5fb68d-7de0-4133-951b-35b2986b94da(eu.algites.lib.common.base.type.mpslang.structure)/6637564721400752516">
+    <file name="6637564721400752516_AConcept.html">
+      <unit id="6637564721400752516" at="1,0,91,7" name="eu.algites.lib.common.base.type.mpslang.structure.6637564721400752516_AConcept" />
+    </file>
+  </root>
+  <root nodeRef="r:7c5fb68d-7de0-4133-951b-35b2986b94da(eu.algites.lib.common.base.type.mpslang.structure)/6637564721400752519">
+    <file name="6637564721400752519_AConcept.html">
+      <unit id="6637564721400752519" at="1,0,98,7" name="eu.algites.lib.common.base.type.mpslang.structure.6637564721400752519_AConcept" />
+    </file>
+  </root>
+  <root nodeRef="r:7c5fb68d-7de0-4133-951b-35b2986b94da(eu.algites.lib.common.base.type.mpslang.structure)/6637564721400752949">
+    <file name="6637564721400752949_AConcept.html">
+      <unit id="6637564721400752949" at="1,0,98,7" name="eu.algites.lib.common.base.type.mpslang.structure.6637564721400752949_AConcept" />
+    </file>
+  </root>
+  <root nodeRef="r:7c5fb68d-7de0-4133-951b-35b2986b94da(eu.algites.lib.common.base.type.mpslang.structure)/6637564721400758244">
+    <file name="6637564721400758244_AConcept.html">
+      <unit id="6637564721400758244" at="1,0,108,7" name="eu.algites.lib.common.base.type.mpslang.structure.6637564721400758244_AConcept" />
+    </file>
+  </root>
+  <root nodeRef="r:7c5fb68d-7de0-4133-951b-35b2986b94da(eu.algites.lib.common.base.type.mpslang.structure)/6637564721400758672">
+    <file name="6637564721400758672_AConcept.html">
+      <unit id="6637564721400758672" at="1,0,109,7" name="eu.algites.lib.common.base.type.mpslang.structure.6637564721400758672_AConcept" />
+    </file>
+  </root>
+  <root nodeRef="r:7c5fb68d-7de0-4133-951b-35b2986b94da(eu.algites.lib.common.base.type.mpslang.structure)/6637564721400759475">
+    <file name="6637564721400759475_AConcept.html">
+      <unit id="6637564721400759475" at="1,0,101,7" name="eu.algites.lib.common.base.type.mpslang.structure.6637564721400759475_AConcept" />
+    </file>
+  </root>
+  <root nodeRef="r:7c5fb68d-7de0-4133-951b-35b2986b94da(eu.algites.lib.common.base.type.mpslang.structure)/7592858601483856001">
+    <file name="7592858601483856001_AConcept.html">
+      <unit id="7592858601483856001" at="1,0,99,7" name="eu.algites.lib.common.base.type.mpslang.structure.7592858601483856001_AConcept" />
+    </file>
+  </root>
+  <root nodeRef="r:7c5fb68d-7de0-4133-951b-35b2986b94da(eu.algites.lib.common.base.type.mpslang.structure)/7751251086237958327">
+    <file name="7751251086237958327_AConcept.html">
+      <unit id="7751251086237958327" at="1,0,90,7" name="eu.algites.lib.common.base.type.mpslang.structure.7751251086237958327_AConcept" />
+    </file>
+  </root>
+</debug-info>
+
